@@ -62,12 +62,17 @@ import {
 let currentLang = 'en';
 
 
+
+// Функция за превод на текста
 function translatePage(lang) {
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach(el => {
     const key = el.getAttribute('data-i18n');
     const translation = translations[lang][key];
-    if (translation) el.textContent = translation;
+    if (translation) {
+      // Променяме само текста, като оставяме иконката незасегната
+      el.textContent = translation;
+    }
   });
 
   // Смени текста в бутона за език
