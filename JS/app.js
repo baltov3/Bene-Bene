@@ -61,17 +61,24 @@ import {
 // ------------------------------------------------
 let currentLang = 'en';
 
-document.getElementById('lang-toggle').addEventListener('click', () => {
-  currentLang = currentLang === 'en' ? 'bg' : 'en';
-  document.getElementById('lang-label').textContent = currentLang.toUpperCase();
-
-  translatePage(currentLang);
-});
 
 function translatePage(lang) {
-  document.getElementById('nav-home').textContent = translations[lang].home;
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const translation = translations[lang][key];
+    if (translation) el.textContent = translation;
+  });
 
+  // Смени текста в бутона за език
+  const langToggle = document.getElementById('lang-toggle');
+  langToggle.innerHTML = lang === 'bg' ? '🌐EN <span id="lang-label"></span>' : '🌐BG <span id="lang-label"></span>';
 }
+
+document.getElementById('lang-toggle').addEventListener('click', () => {
+  currentLang = currentLang === 'bg' ? 'en' : 'bg';
+  translatePage(currentLang);
+});
 
 //---------------------------------------------------
 

@@ -1,10 +1,10 @@
 export const translations = {
   en: {
-    home: "Home",
+    home_title: "Home",
     
   },
   bg: {
-    home: "Начало",
+    home_title: "Начало",
     
   }
 };
