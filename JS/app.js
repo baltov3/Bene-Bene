@@ -20,6 +20,7 @@ import {
     // Variables
 } from './modules/controls.js'
 
+import { translations } from './modules/translations.js';
 
 // Card Carousel module
 import {
@@ -58,7 +59,21 @@ import {
     hamburger,
 } from './modules/navbar.js';
 // ------------------------------------------------
+let currentLang = 'en';
 
+document.getElementById('lang-toggle').addEventListener('click', () => {
+  currentLang = currentLang === 'en' ? 'bg' : 'en';
+  document.getElementById('lang-label').textContent = currentLang.toUpperCase();
+
+  translatePage(currentLang);
+});
+
+function translatePage(lang) {
+  document.getElementById('nav-home').textContent = translations[lang].home;
+
+}
+
+//---------------------------------------------------
 
 handleMediaQueryChange(mediaQuery); // Fires the handleMediaQueryChange function from the start
 

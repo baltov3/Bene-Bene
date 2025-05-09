@@ -75,7 +75,7 @@
                 <ul class="main-nav__list">
                     <li class="current main-nav__list-item">
                         <button>
-                            <a class="current main-nav__link" href="#hero" aria-current="page"
+                            <a id="nav-home" class="current main-nav__link" href="#hero" aria-current="page"
                                 aria-label="link to scroll to the home section">
                                 <i class="main-nav__icon fa fa-home" aria-hidden="true"></i>Home
                             </a>
@@ -83,7 +83,7 @@
                     </li>
 
                     <li class="main-nav__list-item">
-                        <button>
+                        <button id="translate-home-btn">
                             <a class="main-nav__link" href="#menu" aria-label="link to scroll to the menu section">
                                 <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i>Menu
                             </a>
@@ -92,7 +92,7 @@
 
                     <li class="main-nav__list-item">
                         <button>
-                            <a class="main-nav__link" href="#special-drinks"
+                            <a data-i18n="special" class="main-nav__link" href="#special-drinks"
                                 aria-label="link to scroll to the special drinks section">
                                 <i class="main-nav__icon fa fa-coffee" aria-hidden="true"></i>Special
                             </a>
@@ -107,6 +107,21 @@
                             </a>
                         </button>
                     </li>
+                    <!-- 
+                    <li class="main-nav__list-item">
+                        <button id="lang-toggle">
+                            <a class="main-nav__link" href="#"
+                                aria-label="link to scroll to the special drinks section">
+                                <i aria-hidden="true"></i>🌐EN
+                            </a>
+                        </button>
+                    </li class="main-nav__list-item"> -->
+
+                    <li class="main-nav__list-item">
+                        <button id="lang-toggle" aria-label="Превключване на езика" class="main-nav__link">
+                            🌐EN <span id="lang-label"></span>
+                        </button>
+                    </li class="main-nav__list-item">
                 </ul>
                 <!----------------------------------->
 
@@ -140,7 +155,7 @@
                 <!------------- Slide --------------->
                 <div class="hero__slide slide active">
                     <!---------- Slide image ------------>
-                    <img class="hero__slide-img" src="./assets/imgs/cappuccino.png"
+                    <img class="hero__slide-img" src="./assets/imgs/cappuccino-2.jpg"
                         alt="Slide one image: Delicious creamy Cappuccino.">
                     <!----------------------------------->
                 </div>
@@ -360,7 +375,7 @@
                         <li class="menu__card">
                             <h4 class="menu__card-title">Flat white</h4>
                             <div class="menu__card-info">
-                                
+
                                 <p class="menu__card-description">
                                     Savor our cappuccino: espresso, steamed milk, foam; a classic Italian bliss.
                                 </p>
@@ -639,7 +654,7 @@
                     </ul>
                     <!----------------------------------->
 
-                   
+
                     <!----------- Card image ------------>
                     <img src="./assets/imgs/silver.jpg" alt="silver plan image">
                     <!----------------------------------->
@@ -663,8 +678,8 @@
                     </ul>
                     <!----------------------------------->
 
-    
-                   
+
+
                     <!----------------------------------->
 
                     <!----------- Card image ------------>
@@ -691,7 +706,7 @@
                     </ul>
                     <!----------------------------------->
 
-                    
+
                     <!----------------------------------->
 
                     <!----------- Card image ------------>
@@ -745,11 +760,11 @@
 
             <!------- Social media links -------->
             <ul class="footer-nav__social">
-                <li><a href="https://www.facebook.com/profile.php?id=61575771792550"  target="_blank" aria-label="link to facebook page"><i class="fa-brands fa-facebook"
-                            aria-hidden="true"></i></a>
+                <li><a href="https://www.facebook.com/profile.php?id=61575771792550" target="_blank"
+                        aria-label="link to facebook page"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                 </li>
-               
-                <li><a href="#"  target="_blank"  aria-label="link to instragram page"><i class="fa-brands fa-instagram"
+
+                <li><a href="#" target="_blank" aria-label="link to instragram page"><i class="fa-brands fa-instagram"
                             aria-hidden="true"></i></a></li>
 
             </ul>
