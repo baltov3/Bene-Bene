@@ -58,6 +58,60 @@ import {
     mediaQuery,
     hamburger,
 } from './modules/navbar.js';
+
+// ------------------------------------------------
+
+import { products } from './modules/modal.js';
+
+function openModal(productId) {
+  const p = products[productId];
+  if (!p) return;
+
+  document.getElementById("modal-title").textContent = p.title;
+  document.getElementById("modal-description").textContent = p.description;
+  document.getElementById("modal-price").textContent = p.price;
+
+  const volumeEl = document.getElementById("modal-volume");
+  volumeEl.style.display = p.volume ? "block" : "none";
+  volumeEl.textContent = p.volume ? `/${p.volume}/` : "";
+
+  const adviceEl = document.getElementById("modal-advice");
+  adviceEl.style.display = p.advice ? "block" : "none";
+  adviceEl.querySelector("p").textContent = p.advice || "";
+
+  const reminderEl = document.getElementById("modal-reminder");
+  reminderEl.style.display = p.reminder ? "block" : "none";
+  reminderEl.querySelector("p").textContent = p.reminder || "";
+
+  const allergenContainer = document.getElementById("modal-allergens-images");
+  allergenContainer.innerHTML = "";
+  if (p.allergens.length > 0) {
+    document.getElementById("modal-alergens").style.display = "block";
+    p.allergens.forEach(src => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.className = "allergen-icon";
+      allergenContainer.appendChild(img);
+    });
+  } else {
+    document.getElementById("modal-alergens").style.display = "none";
+  }
+
+  document.getElementById("modal").classList.remove("hide");
+}
+
+window.closeModal = function () {
+  document.getElementById("modal").classList.add("hide");
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".info-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const productId = btn.dataset.productId;
+      openModal(productId);
+    });
+  });
+});
 // ------------------------------------------------
 let currentLang = 'en';
 

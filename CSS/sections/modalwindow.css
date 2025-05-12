@@ -1,0 +1,73 @@
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex; /* Показва модала */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+.modal-content {
+  font-family: "Bad Script", cursive;
+  letter-spacing: 0.1rem;
+   color: #333;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  transition: transform 0.4s ease;
+  transform: scale(1);
+}
+
+
+/* Добави стил за бутона за затваряне */
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Стил за кръгче около цената */
+.price-circle {
+  margin: 1rem 0;
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  display: inline-block;
+}
+.hide {
+  display: none;
+}
+
+/* Алергените */
+.allergen-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.allergen-icon {
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
