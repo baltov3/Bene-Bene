@@ -70,8 +70,11 @@ function translatePage(lang) {
     const key = el.getAttribute('data-i18n');
     const translation = translations[lang][key];
     if (translation) {
-      // Променяме само текста, като оставяме иконката незасегната
-      el.textContent = translation;
+      // Променяме само текста в span, който е зададен за превод
+      const span = el.querySelector('.text-to-translate');
+      if (span) {
+        span.textContent = translation;
+      }
     }
   });
 

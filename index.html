@@ -77,7 +77,7 @@
                         <button>
                             <a data-i18n="home_title" class="current main-nav__link" href="#hero" aria-current="page"
                                 aria-label="link to scroll to the home section">
-                                <i class="main-nav__icon fa fa-home" aria-hidden="true"></i>Home
+                                <i class="main-nav__icon fa fa-home" aria-hidden="true"></i> <span class="text-to-translate">Home</span>
                             </a>
                         </button>
                     </li>
@@ -85,7 +85,7 @@
                     <li class="main-nav__list-item">
                         <button id="translate-home-btn">
                             <a data-i18n="menu_title" class="main-nav__link" href="#menu" aria-label="link to scroll to the menu section">
-                                <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i>Menu
+                                <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i> <span class="text-to-translate">Menu</span>
                             </a>
                         </button>
                     </li>
@@ -94,7 +94,7 @@
                         <button>
                             <a class="main-nav__link" href="#special-drinks"
                                 aria-label="link to scroll to the special drinks section">
-                                <i class="main-nav__icon fa fa-coffee" aria-hidden="true"></i>Special
+                                <i class="main-nav__icon fa fa-coffee" aria-hidden="true"><span class="text-to-translate"></i><span class="text-to-translate">Special</span>
                             </a>
                         </button>
                     </li class="main-nav__list-item">
@@ -148,6 +148,96 @@
 
     <!--------- Main sections ----------->
     <main>
+        
+        <!----------------------------------->
+        <div class="section-title-wrapper">
+            <h2 class="section-title">Защо  <span class="highlight-three">нас?</span> </h2>
+        </div>
+        <!---------- Plans section ---------->
+        <section class="plans-section" id="plans-section">
+            
+
+            <div class="plans-section__cards">
+                <div class="plans-section__card plans-section__card--silver-plan">
+                    <!----------- Card title ------------>
+                    <h2 class="plans-section__card-title">Внимателно подбрани сортове</h2>
+                    <!----------------------------------->
+
+                    <!------- Plan features list -------->
+                    <ul class="plans-section__card-list plans-section__card-list--silver-plan">
+                        <li class="plans-section__card-list-item">Special drinks <i class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Special discounts <i class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Surprise gifts <i class="fa fa-times"></i></li>
+                        <li class="plans-section__card-list-item">Free drinks in special occasions <i
+                                class="fa fa-times"></i></li>
+                        <li class="plans-section__card-list-item">Free pastries and savories <i class="fa fa-times"></i>
+                        </li>
+                        <li class="plans-section__card-list-item">Include a familiar or friend <i
+                                class="fa fa-times"></i></li>
+                    </ul>
+                    <!----------------------------------->
+
+
+                    <!----------- Card image ------------>
+                    <img src="./assets/imgs/silver.jpg" alt="silver plan image">
+                    <!----------------------------------->
+                </div>
+
+                <div class="plans-section__card plans-section__card--diamond-plan">
+                    <h2 class="plans-section__card-title">Истинският вкус започва с грижа</h2>
+                    <!----------------------------------->
+
+                    <!------- Plan features list -------->
+                    <ul class="plans-section__card-list plans-section__card-list--diamond-plan">
+                        <li class="plans-section__card-list-item">Special drinks <i class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Special discounts <i class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Surprise gifts <i class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Free drinks in special occasions <i
+                                class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Free pastries and savories <i class="fa fa-check"></i>
+                        </li>
+                        <li class="plans-section__card-list-item">Include a familiar or friend <i
+                                class="fa fa-check"></i></li>
+                    </ul>
+                    <!----------------------------------->
+
+
+
+                    <!----------------------------------->
+
+                    <!----------- Card image ------------>
+                    <img src="./assets/imgs/diamond.jpg" alt="diamond plan image">
+                    <!----------------------------------->
+                </div>
+
+                <div class="plans-section__card plans-section__card--gold-plan">
+                    <!----------- Card title ------------>
+                    <h2 class="plans-section__card-title">Грижа към клиента</h2>
+                    <!----------------------------------->
+
+                    <!------- Plan features list -------->
+                    <ul class="plans-section__card-list plans-section__card-list--gold-plan">
+                        <li class="plans-section__card-list-item">Special drinks <i class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Special discounts <i class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Surprise gifts <i class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Free drinks in special occasions <i
+                                class="fa fa-check"></i></li>
+                        <li class="plans-section__card-list-item">Free pastries and savories <i class="fa fa-times"></i>
+                        </li>
+                        <li class="plans-section__card-list-item">Include a familiar or friend <i
+                                class="fa fa-times"></i></li>
+                    </ul>
+                    <!----------------------------------->
+
+
+                    <!----------------------------------->
+
+                    <!----------- Card image ------------>
+                    <img src="./assets/imgs/gold.jpg" alt="gold plan image">
+                    <!----------------------------------->
+                </div>
+            </div>
+        </section>
         <!-------- Hero section --------->
         <section id="hero" class="hero">
             <!-------- Hero slides ---------->
@@ -764,7 +854,7 @@
                         aria-label="link to facebook page"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                 </li>
 
-                <li><a href="#" target="_blank" aria-label="link to instragram page"><i class="fa-brands fa-instagram"
+                <li><a href="https://www.instagram.com/bene_bene_dupnica/?next=%2Fbethustle681%2F" target="_blank" aria-label="link to instragram page"><i class="fa-brands fa-instagram"
                             aria-hidden="true"></i></a></li>
 
             </ul>

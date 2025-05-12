@@ -24,8 +24,11 @@ const footer = document.querySelector('footer'); // Selects the footer
 let lastScrollTop = 0 // Stores the last vertical scrolling position; zero by default
 
 
-// ----- Function: handle media query change ------
 function handleMediaQueryChange(mediaQuery) {
+    if (!mainNavBtns || !mainNavList || !mainNavWrapper) {
+        console.error("Missing DOM elements:", { mainNavBtns, mainNavList, mainNavWrapper });
+        return;
+      }
     // Creates a list item
     const btnListItem = document.createElement('li');
 
@@ -37,6 +40,8 @@ function handleMediaQueryChange(mediaQuery) {
         mainNavList.setAttribute('inert', '');
         mainNavList.classList.add('transition-off');
     } else {
+
+          
         // If the viewport width is greater than or equal to 50rem, move mainNavBtns back to its original position
         mainNavWrapper.appendChild(mainNavBtns);
         mainNavList.removeChild(mainNavList.lastChild);
