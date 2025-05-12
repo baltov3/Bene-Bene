@@ -243,5 +243,16 @@
         transform: scale(1.15) translateX(-2rem);
     }
 }
+.why_us {
+    text-align: center;
+    margin-top: 4rem;       /* отстояние НАГОРЕ от предходна секция */
 
-/* ----------------------------------- */
+}
+
+.why_us .section-title {
+    font-size: 3.5rem;       /* по-голям шрифт */
+    font-weight: 700;
+    color: var(--clr-neutral-1); /* или избери твой цвят */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+

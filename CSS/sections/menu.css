@@ -242,3 +242,93 @@
 }
 
 /* ----------------------------------- */
+.menu-section {
+  padding: 3rem 1rem;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: "Bad Script", cursive;
+}
+
+.menu-title-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.menu-title-wrapper h1.menu-title {
+  font-size: 3rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.menu-title-wrapper h3.menu-subtitle {
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.menu-category-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+  flex-wrap: wrap;
+}
+
+.menu-category-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.menu-image {
+  flex: 1 1 45%;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.menu-list {
+  flex: 1 1 45%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+.menu-category {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.menu-name {
+  font-size: 1.2rem;
+}
+
+.menu-price {
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .menu-category-section,
+  .menu-category-section.reverse {
+    flex-direction: column;
+  }
+
+  .menu-image,
+  .menu-list {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
