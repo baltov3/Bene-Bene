@@ -3,7 +3,7 @@
 
 <head>
     <!--------- Website title ----------->
-    <title>The Coffee Shop</title>
+    <title>Bene Bene</title>
     <!----------------------------------->
 
     <!----------- Meta data ------------->
@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Carlos Filipe">
     <meta name="description"
-        content="Welcome to The Coffee Shop! We specialize in serving the best coffee drinks you will ever find. Visit us for a cozy atmosphere and a delightful coffee experience.">
+        content="Welcome to Bene Bene! We specialize in serving the best coffee drinks you will ever find. Visit us for a cozy atmosphere and a delightful coffee experience.">
     <meta name="keywords"
         content="coffee, cafe, The Coffee Shop, beverages, espresso, cappuccino, latte, coffee shop, cozy cafe, coffeehouse">
     <!----------------------------------->
@@ -763,45 +763,88 @@
 
     <!------------- Footer -------------->
     <footer>
-        <nav class="footer-nav">
-            <div class="footer-nav__lists">
-                <!---------- Footer links ----------->
-                <ul class="footer-nav__list">
-                    <li><a href="#">App</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+<div class="footer-two-column-wrapper">
+  
+  <!-- Лява колона: Контактна форма -->
+  <div class="contact-form-wrapper">
+    <form class="form-box" onsubmit="sendMail(event)">
+      <div class="container-block form-wrapper">
+        <div class="responsive-container-block form-grid">
+          <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6">
+            <p class="text-blk input-title">Име</p>
+            <input class="input" name="FirstName" placeholder="Име" required>
+          </div>
+          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+            <p class="text-blk input-title">Фамилия</p>
+            <input class="input" name="LastName" placeholder="Фамилия" required>
+          </div>
+          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+            <p class="text-blk input-title">Имейл</p>
+            <input class="input" name="Email" placeholder="Имейл" type="email" required>
+          </div>
+          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+            <p class="text-blk input-title">Телефонен номер</p>
+            <input class="input" name="PhoneNumber" placeholder="Телефонен номер" type="tel">
+          </div>
+          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12">
+            <p class="text-blk input-title">Съобщение</p>
+            <textarea class="textarea" name="Message" placeholder="Споделете какво мислите..." rows="5" required></textarea>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <button class="submit-btn" type="submit">Изпрати</button>
+        </div>
+      </div>
+    </form>
+  </div>
 
-                <ul class="footer-nav__list">
-                    <li><a href="#">Daily drinks</a></li>
-                    <li><a href="#">Promos</a></li>
-                    <li><a href="#">Stores</a></li>
-                    <li><a href="#">Feedback</a></li>
-                </ul>
-                <!----------------------------------->
-            </div>
+  <!-- Дясна колона: Контактна информация -->
+  <div class="contact-section" id="ifgi">
+    <div class="container-box">
+      <div class="text-content">
+        <p class="contactus-head">Свържи се с нас</p>
+        <p class="contactus-subhead">
+          Свържете се с нас за всякакви въпроси или допълнителна информация.
+          Ние сме тук, за да направим вашето преживяване при нас още по-специално.
+        </p>
+      </div>
+      
+      <div class="workik-contact-bigbox">
+        <div class="workik-contact-box">
+          <div class="text-box">
+            <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg">
+            <p class="contact-text">0893732733</p>
+          </div>
+          <div class="text-box">
+            <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg">
+            <p class="contact-text">cafeteriamolli@gmail.com</p>
+          </div>
+          <div class="text-box">
+            <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg">
+            <p class="contact-text">Център, Солун 3, 2600 Дупница</p>
+          </div>
+        </div>
 
-            <!------- Social media links -------->
-            <ul class="footer-nav__social">
-                <li><a href="https://www.facebook.com/profile.php?id=61575771792550" target="_blank"
-                        aria-label="link to facebook page"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-                </li>
+        <div class="social-media-links">
+          <a href="https://www.instagram.com/molinaricoffeeboutique/">
+            <img class="social-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          <a href="https://g.page/r/CeP2L_JTmQTwEBM/review">
+            <img class="social-svg" src="/assets/aboutSvgs/google-alt-svgrepo-com.svg">
+          </a>
+        </div>
 
-                <li><a href="https://www.instagram.com/bene_bene_dupnica/?next=%2Fbethustle681%2F" target="_blank"
-                        aria-label="link to instragram page"><i class="fa-brands fa-instagram"
-                            aria-hidden="true"></i></a></li>
+        <div class="powered-by">
+          © 2025 Bene Bene | All Rights Reserved <br>
+          Powered by Kristiyan
+        </div>
+      </div>
+    </div>
+  </div>
 
-            </ul>
-            <!----------------------------------->
+</div>
 
-            <!------- Copyright message --------->
-            <h4 class="footer-nav__copy-message">&copy; 2025 | <span class="highlight-one">Bene Bene</span></h4>
-            <!----------------------------------->
-        </nav>
-    </footer>
-    <!----------------------------------->
-
+</footer>
     <div id="modal" class="modal hide">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">×</span>
