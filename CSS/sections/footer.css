@@ -1,24 +1,25 @@
+/* Основна обвивка за футъра */
 .footer-two-column-wrapper {
   display: flex;
-  justify-content: flex-start;     /* Избутва колоните вляво */
+  justify-content: flex-start;
   align-items: flex-start;
-  max-width: 100%;                 /* Пълна ширина */
-  margin: 0;                       /* Няма автоматично центриране */
-  padding: 3rem 1rem 3rem 0;       /* Премахваме padding вляво */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
   gap: 40px;
   box-sizing: border-box;
-  padding: 2rem;
 }
-
 
 /* Лява колона - форма */
 .contact-form-wrapper {
   flex: 1 1 50%;
-  padding: 0 2rem 0 0;
-  background-color: transparent;
+  padding-right: 2rem;
+  background: transparent;
+  border-right: 2px solid #fff;
+  margin-left: -1rem;
   box-sizing: border-box;
-  border-right: 2px solid #fff; /* 🟩 Ето бялата граница */
 }
+
 /* Дясна колона - контактна информация */
 #ifgi {
   flex: 1 1 50%;
@@ -28,17 +29,8 @@
   color: #fff;
   font-family: "Bad Script", cursive;
   box-sizing: border-box;
-  
+}
 
-}
-.input-title {
-  font-size: 1.4rem;
-  font-style: italic;
-  font-family: "Bad Script", cursive;
-  margin-bottom: 5px;
-  color: #ffffff;
-  display: block;
-}
 /* Заглавие на формата */
 .form-head {
   text-align: center;
@@ -47,8 +39,8 @@
 
 .form-head h2 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
   font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -58,26 +50,17 @@
   color: #ccc;
 }
 
-/* Формата в grid */
+/* Grid оформление на формата */
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Две колони */
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 0 1rem;
 }
 
-.input {
-  width: 100%; /* Заема цялата ширина на колоната */
-  padding: 14px 18px;
-  margin: 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #fff;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
+/* Унифицирани стилове за input и textarea */
+.input,
 .textarea {
-  grid-column: 1 / -1; /* Застъпва и двете колони = нов ред */
   width: 100%;
   padding: 14px 18px;
   border: 1px solid #ccc;
@@ -85,37 +68,54 @@
   background: #fff;
   font-size: 1rem;
   box-sizing: border-box;
-  resize: vertical;
-  margin-top: 10px;
 }
 
+.textarea {
+  height: 160px;
+  resize: vertical;
+  margin-top: 10px;
+  grid-column: 1 / -1;
+}
 
-
+/* Placeholder стилове */
 .input::placeholder,
 .textarea::placeholder {
   color: #888;
 }
 
-.textarea {
-  grid-column: 1 / -1;
-  resize: vertical;
+/* Заглавия за полета */
+.input-title {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-family: "Bad Script", cursive;
+  margin-bottom: 5px;
+  color: #fff;
+  display: block;
 }
 
-/* Бутон */
+/* Responsive grid override за textarea контейнера */
+.responsive-cell-block.wk-desk-12 {
+  grid-column: 1 / -1;
+}
+
+/* Бутон за изпращане */
 .btn-wrapper {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 3rem;
+  
 }
 
 .submit-btn {
   background-color: #c93232;
   color: #000;
-  padding: 12px 40px;
-  font-size: 1rem;
+  padding: 12px 80px;
+  font-size: 1.5rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+   
+   
 }
 
 .submit-btn:hover {
@@ -173,8 +173,7 @@
   color: #fff;
 }
 
-
-
+/* Медия заявка за мобилни устройства */
 @media (max-width: 768px) {
   .footer-two-column-wrapper {
     flex-direction: column;
@@ -189,4 +188,3 @@
     margin: 0;
   }
 }
-
