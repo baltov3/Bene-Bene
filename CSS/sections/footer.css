@@ -30,7 +30,10 @@
   font-family: "Bad Script", cursive;
   box-sizing: border-box;
 }
-
+.text-content {
+  text-align: center;
+ gap:40px
+}
 /* Заглавие на формата */
 .form-head {
   text-align: center;
@@ -162,6 +165,7 @@
   font-size: 0.9em;
   margin-top: 20px;
   color: #ccc;
+   text-align: center;
 }
 
 .ryzweb {

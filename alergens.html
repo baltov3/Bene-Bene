@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Алергени | Molli</title>
+  <link rel="stylesheet" href="CSS/sections/alergens.css" />
+   <link rel="stylesheet" href="CSS/sections/footer.css" />
+</head>
+<body>
+
+  <section class="allergen-table-section">
+      <h2>Списък на алергените</h2>
+      <div class="table-container">
+        <table class="allergen-table">
+          <thead>
+            <tr>
+              <th>Икона</th>
+              <th>Описание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="/assets/allergens/gluten.png" alt="Глутен" class="allergen-icon"></td>
+              <td><strong>Зърнени култури, съдържащи глутен</strong> </td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/qdki.png" alt="Ядки" class="allergen-icon"></td>
+              <td><strong>Ядки</strong> </td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/milk.png" alt="Мляко" class="allergen-icon"></td>
+              <td><strong>Мляко u млечни продукти</strong> </td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/egs.png" alt="Яйца" class="allergen-icon"></td>
+              <td><strong>Яйца и продукти от тях</strong></td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/fish.png" alt="Риба" class="allergen-icon"></td>
+              <td><strong>Риба и рибни продукти</strong> </td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/soq.png" alt="Соеви продукти" class="allergen-icon"></td>
+              <td><strong>Соя u соеви продукти</strong></td>
+            </tr>
+
+            <tr>
+              <td><img src="/assets/allergens/celina.png" alt="Глутен" class="allergen-icon"></td>
+              <td><strong>Целина u продукти от нея</strong> </td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/dioksid.png" alt=" Серен диоксид u сулфити" class="allergen-icon"></td>
+              <td><strong> Серен диоксид u сулфити</strong></td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/fustuci.png" alt="Мляко" class="allergen-icon"></td>
+              <td><strong>Фъстъци и продукти от тях</strong></td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/lupina.png" alt="Яйца" class="allergen-icon"></td>
+              <td><strong>Лупина и продукти от нея</strong></td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/mekoteli.png" alt="Риба" class="allergen-icon"></td>
+              <td><strong>Мекотели и продукти от тях</strong> </td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/rakoobrazni.png" alt="Соеви продукти" class="allergen-icon"></td>
+              <td><strong>Ракообразни и продукти от тях</strong> </td>
+            </tr>
+            <tr>
+              <td><img src="/assets/allergens/sinap.png" alt="Соеви продукти" class="allergen-icon"></td>
+              <td><strong>Синап и продукти от него</strong> </td>
+            </tr>
+            <!-- Добавете допълнителни редове тук -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+ <footer>
+<div class="footer-two-column-wrapper ">
+  
+  <!-- Лява колона: Контактна форма -->
+  <div class="contact-form-wrapper">
+    <form class="form-box" onsubmit="sendMail(event)">
+      <div class="container-block form-wrapper">
+        <div class="responsive-container-block form-grid">
+          <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6">
+            <p class="text-blk input-title">Име</p>
+            <input class="input" name="FirstName" placeholder="Име" required>
+          </div>
+          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+            <p class="text-blk input-title">Фамилия</p>
+            <input class="input" name="LastName" placeholder="Фамилия" required>
+          </div>
+          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+            <p class="text-blk input-title">Имейл</p>
+            <input class="input" name="Email" placeholder="Имейл" type="email" required>
+          </div>
+          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+            <p class="text-blk input-title">Телефонен номер</p>
+            <input class="input" name="PhoneNumber" placeholder="Телефонен номер" type="tel">
+          </div>
+          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12">
+<p class="text-blk input-title">Съобщение</p>
+<textarea class="textarea" name="Message" placeholder="Споделете какво мислите..." rows="5" required></textarea>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <button class="submit-btn" type="submit">Изпрати</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Дясна колона: Контактна информация -->
+  <div class="contact-section" id="ifgi">
+    <div class="container-box">
+      <div class="text-content">
+        <p class="contactus-head">Свържи се с нас</p>
+        <p class="contactus-subhead">
+          Свържете се с нас за всякакви въпроси или допълнителна информация.
+          Ние сме тук, за да направим вашето преживяване при нас още по-специално.
+        </p>
+      </div>
+      
+      <div class="workik-contact-bigbox">
+        <div class="workik-contact-box">
+          <div class="text-box">
+            <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg">
+            <p class="contact-text">0893732733</p>
+          </div>
+          <div class="text-box">
+            <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg">
+            <p class="contact-text">cafeteriamolli@gmail.com</p>
+          </div>
+          <div class="text-box">
+            <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg">
+            <p class="contact-text">Център, Солун 3, 2600 Дупница</p>
+          </div>
+        </div>
+
+        <div class="social-media-links">
+          <a href="https://www.instagram.com/molinaricoffeeboutique/">
+            <img class="social-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+          </a>
+          <a href="https://g.page/r/CeP2L_JTmQTwEBM/review">
+            <img class="social-svg" src="/assets/aboutSvgs/google-alt-svgrepo-com.svg">
+          </a>
+        </div>
+
+        <div class="powered-by">
+          © 2025 Bene Bene | All Rights Reserved <br>
+          Powered by Kristiyan
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
