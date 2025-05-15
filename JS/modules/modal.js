@@ -6,7 +6,7 @@ export const products = {
     volume: "390ml",
     advice: "Комбинирайте с бисквити за още по-добър вкус.",
     reminder: "Може да добавите сироп по избор.",
-    allergens: ["/assets/allergens/milk.png"]
+    allergens: ["/assets/imgs/milk.png"]
   },
   // Добави още продукти тук
 };

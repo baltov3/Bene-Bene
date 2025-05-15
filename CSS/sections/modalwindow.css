@@ -7,16 +7,25 @@
   display: flex; /* Показва модала */
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 1000;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.modal.show {
+  display: flex; /* Показва модала */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Скрит модал */
+.modal.hide {
+  opacity: 0;
+  transform: translateY(-20px);
 }
 
 
 .modal-content {
-  font-family: "Bad Script", cursive;
-  letter-spacing: 0.1rem;
-   color: #333;
-  margin: 0;
-  box-sizing: border-box;
   background-color: gainsboro;
   padding: 20px;
   border-radius: 8px;
@@ -25,9 +34,13 @@
   max-width: 500px;
   position: relative;
   transition: transform 0.4s ease;
-  transform: scale(1);
 }
-
+.modal-content h2,
+.modal-content p {
+  font-family: "Montserrat", sans-serif;
+  color: #c1272d;
+  margin: 10px 0;
+}
 
 /* Добави стил за бутона за затваряне */
 .modal .close {
@@ -41,30 +54,144 @@
 
 /* Стил за кръгче около цената */
 .price-circle {
-  margin: 1rem 0;
-  background: #fff;
-  color: #000;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  font-weight: bold;
-  display: inline-block;
+  position: absolute;
+  top: -45px;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, grey, #c1272d);
+  color: white;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Montserrat", sans-serif;
 }
+
+.price-circle span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.price-circle small {
+  font-size: 0.8rem;
+}
+
+.toggle-container {
+  position: relative;
+  margin: 20px 0;
+}
+
 .hide {
   display: none;
 }
-
-/* Алергените */
-.allergen-container {
+ 
+.info-toggle {
+  position: absolute;
+  bottom: -20px; /* Остава в долния ляв ъгъл */
+  left: -50px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, grey, #c1272d);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Уверява се, че е над другите елементи */
+}
+
+.info-toggle svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff; /* Цветът на иконата */
+}
+/* Алергените */
+.modal-section {
+  display: block;
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all 0.3s ease-out;
+  background: #222;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal-section-alergens {
+  display: block;
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all 0.3s ease-out;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5px;
+}
+.modal-section-alergens h3{
+  font-size: 1.2em;
+  color: #c1272d;
+
+}
+
+.modal-section h3 {
+  font-size: 1.2em;
+  color: #f9f9f9;
+  margin-bottom: 5px;
+}
+
+.modal-section p {
+  color: #ddd;
+}
+
+.allergen-container {
+  display: flex;
+  justify-content: center; /* Центрира иконите хоризонтално */
+  align-items: center; /* Центрира иконите вертикално */
+  gap: 10px;
 }
 
 .allergen-icon {
   width: 40px;
   height: 40px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
+.allergen-link {
+ 
+  color: grey; /* Червен цвят за текста */
+  text-decoration: none; /* Премахване на подчертаването */
+  font-weight: bold; /* Подчертаване на текста */
+  font-size: 16px; /* Размер на шрифта */
+  transition: color 0.3s ease; /* Плавен преход при промяна на цвета */
+}
+
+.allergen-link:hover {
+  color: #ff5722; /* Промяна на цвета при задържане на мишката */
+  text-decoration: underline; /* Добавяне на подчертаване при задържане */
+}
+
+.allergen-link:active {
+  color: #b71c1c; /* По-тъмен цвят при клик */
+}
+.close {
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #c1272d
+}
+
 
 @keyframes zoomIn {
   to {
