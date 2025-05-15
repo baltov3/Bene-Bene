@@ -89,6 +89,7 @@ header.collapsed {
     position: relative;
     z-index: 1;
     background-color: var(--bg-dark-1);
+    
 }
 
 .main-nav__title {
