@@ -31,11 +31,14 @@
 
     <!----------- JavaScript ------------>
     <script type="module" src="./JS/app.js"></script>
+      <script type="module" src="./JS/modules/navbar.js"></script>
     <!----------------------------------->
 
 </head>
 <body>
-     <header class="expanded">
+ 
+        <!--------- Main navigation --------->
+         <header class="expanded">
         <!--------- Main navigation --------->
         <nav class="main-nav" aria-label="primary navigation">
             <!-------- Navigation wrapper --------->
@@ -77,7 +80,7 @@
                             <a data-i18n="menu_title" class="main-nav__link" href="index.html#menu"
                                 aria-label="link to scroll to the menu section">
                                 <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i> <span
-                                    class="text-to-translate">Мяню</span>
+                                    class="text-to-translate">Меню</span>
                             </a>
                         </button>
                     </li>
@@ -116,6 +119,7 @@
         <!----------------------------------->
 
         <!------ Expand navbar button ------->
+
         <div class="main-nav-controls">
             <button id="js-expand-navbar" class="main-nav-controls__btn expand-navbar collapse" aria-hidden="true"
                 title="Show/hide menu">
@@ -141,36 +145,36 @@
           </thead>
           <tbody>
             <tr>
-              <td><img src="/assets/allergens/gluten.png" alt="Глутен" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Глутен" class="allergen-icon"></td>
               <td><strong>Зърнени култури, съдържащи глутен</strong> </td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/qdki.png" alt="Ядки" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Ядки" class="allergen-icon"></td>
               <td><strong>Ядки</strong> </td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/milk.png" alt="Мляко" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Мляко" class="allergen-icon"></td>
               <td><strong>Мляко u млечни продукти</strong> </td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/egs.png" alt="Яйца" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Яйца" class="allergen-icon"></td>
               <td><strong>Яйца и продукти от тях</strong></td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/fish.png" alt="Риба" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Риба" class="allergen-icon"></td>
               <td><strong>Риба и рибни продукти</strong> </td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/soq.png" alt="Соеви продукти" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Соеви продукти" class="allergen-icon"></td>
               <td><strong>Соя u соеви продукти</strong></td>
             </tr>
 
             <tr>
-              <td><img src="/assets/allergens/celina.png" alt="Глутен" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Глутен" class="allergen-icon"></td>
               <td><strong>Целина u продукти от нея</strong> </td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/dioksid.png" alt=" Серен диоксид u сулфити" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt=" Серен диоксид u сулфити" class="allergen-icon"></td>
               <td><strong> Серен диоксид u сулфити</strong></td>
             </tr>
             <tr>
@@ -178,19 +182,19 @@
               <td><strong>Фъстъци и продукти от тях</strong></td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/lupina.png" alt="Яйца" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Яйца" class="allergen-icon"></td>
               <td><strong>Лупина и продукти от нея</strong></td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/mekoteli.png" alt="Риба" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Риба" class="allergen-icon"></td>
               <td><strong>Мекотели и продукти от тях</strong> </td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/rakoobrazni.png" alt="Соеви продукти" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Соеви продукти" class="allergen-icon"></td>
               <td><strong>Ракообразни и продукти от тях</strong> </td>
             </tr>
             <tr>
-              <td><img src="/assets/allergens/sinap.png" alt="Соеви продукти" class="allergen-icon"></td>
+              <td><img src="/assets/imgs/milk.png" alt="Соеви продукти" class="allergen-icon"></td>
               <td><strong>Синап и продукти от него</strong> </td>
             </tr>
             <!-- Добавете допълнителни редове тук -->
@@ -267,9 +271,7 @@
           <a href="https://www.instagram.com/molinaricoffeeboutique/">
             <img class="social-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
           </a>
-          <a href="https://g.page/r/CeP2L_JTmQTwEBM/review">
-            <img class="social-svg" src="/assets/aboutSvgs/google-alt-svgrepo-com.svg">
-          </a>
+         
         </div>
 
         <div class="powered-by">
