@@ -8,5 +8,11 @@ export const products = {
     reminder: "Може да добавите сироп по избор.",
     allergens: ["/assets/imgs/milk.png"]
   },
+  espresso: {
+    title: "Еспресо",
+    description: "Класическо еспресо с богат аромат и интензивен вкус.",
+    price: "1.50лв",
+    
+  },
   // Добави още продукти тук
 };

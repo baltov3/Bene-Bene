@@ -308,6 +308,12 @@
   justify-content: space-between;
   padding: 0.5rem 0;
   border-bottom: 1px solid #333;
+  opacity: 1;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 0.3s ease;
+  max-height: 1000px; /* някаква голяма стойност */
+  overflow: hidden;
 }
 
 .menu-name {
@@ -331,4 +337,33 @@
     flex: 1 1 100%;
     max-width: 100%;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.show-more-btn {
+  margin-top: 10px;
+  background-color: #7c5b42;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #5e412f;
+}
+
+
+
+.menu-item.hidden {
+  opacity: 0;
+  transform: scaleY(0);
+  max-height: 0;
+  pointer-events: none;
 }

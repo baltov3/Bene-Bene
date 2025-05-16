@@ -67,26 +67,44 @@ function openModal(productId) {
   const p = products[productId];
   if (!p) return;
 
-  document.getElementById("modal-title").textContent = p.title;
-  document.getElementById("modal-description").textContent = p.description;
-  document.getElementById("modal-price").textContent = p.price;
+   document.getElementById("modal-title").textContent = p.title || "";
+  document.getElementById("modal-description").textContent = p.description || "";
+  document.getElementById("modal-price").textContent = p.price || "";
 
+
+    // Volume
   const volumeEl = document.getElementById("modal-volume");
-  volumeEl.style.display = p.volume ? "block" : "none";
-  volumeEl.textContent = p.volume ? `/${p.volume}/` : "";
+  if (p.volume) {
+    volumeEl.style.display = "inline";
+    volumeEl.textContent = `/${p.volume}/`;
+  } else {
+    volumeEl.style.display = "none";
+  }
 
+  // Advice
   const adviceEl = document.getElementById("modal-advice");
-  adviceEl.style.display = p.advice ? "block" : "none";
-  adviceEl.querySelector("p").textContent = p.advice || "";
+  if (p.advice) {
+    adviceEl.style.display = "block";
+    adviceEl.querySelector("p").textContent = p.advice;
+  } else {
+    adviceEl.style.display = "none";
+  }
 
+  // Reminder
   const reminderEl = document.getElementById("modal-reminder");
-  reminderEl.style.display = p.reminder ? "block" : "none";
-  reminderEl.querySelector("p").textContent = p.reminder || "";
-
+  if (p.reminder) {
+    reminderEl.style.display = "block";
+    reminderEl.querySelector("p").textContent = p.reminder;
+  } else {
+    reminderEl.style.display = "none";
+  }
+// Allergens
   const allergenContainer = document.getElementById("modal-allergens-images");
   allergenContainer.innerHTML = "";
-  if (p.allergens.length > 0) {
-    document.getElementById("modal-alergens").style.display = "block";
+  const allergenSection = document.getElementById("modal-alergens");
+
+  if (Array.isArray(p.allergens) && p.allergens.length > 0) {
+    allergenSection.style.display = "block";
     p.allergens.forEach(src => {
       const img = document.createElement("img");
       img.src = src;
@@ -94,7 +112,7 @@ function openModal(productId) {
       allergenContainer.appendChild(img);
     });
   } else {
-    document.getElementById("modal-alergens").style.display = "none";
+    allergenSection.style.display = "none";
   }
 
   document.getElementById("modal").classList.remove("hide");
