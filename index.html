@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="./CSS/sections/controls.css">
     <link rel="stylesheet" href="./CSS/sections/footer.css">
     <link rel="stylesheet" href="./CSS/sections/modalwindow.css">
+     <link rel="stylesheet" href="./CSS/sections/loader.css">
 
     <link rel="stylesheet" href="./CSS/utils/buttons.css">
     <link rel="stylesheet" href="./CSS/utils/misc.css">
@@ -80,10 +81,14 @@ showMoreBtn.addEventListener('click', () => {
   });
 </script>
 
+
+
     <!----------------------------------->
 </head>
 
 <body>
+
+
     <!------------- Header -------------->
     <header class="expanded">
         <!--------- Main navigation --------->
@@ -182,9 +187,12 @@ showMoreBtn.addEventListener('click', () => {
 
     <!--------- Main sections ----------->
     <main>
+        
+
 <section class="hero-section">
   <div class="hero-overlay">
     <img src="./assets/imgs/Bene Bene on Rustic Wood.png" alt="Bene Bene Logo" class="hero-logo">
+
   </div>
 </section>
         <!----------------------------------->
@@ -389,13 +397,11 @@ showMoreBtn.addEventListener('click', () => {
 
         <!--------- Menu section ---------->
         <section id="menu" class="menu">
-            <div class="menu__title-wrapper section-title-wrapper">
-                <!---------- Drinks title ----------->
-                <h3 class="section-title">Wanna try our most <span class="highlight-three">delicious</span>
-                    drinks?</h3>
-                <!----------------------------------->
+            
+<!-- Секция заглавие -->
+            <div class="why_us">
+                <h2 class="section-title">Искате ли да опитате нашите най-вкусни <span class="highlight-three">напитки?</span></h2>
             </div>
-
             <div class="menu__content">
                 <!-------- Drinks carousel ---------->
                 <div class="menu__carousel">
@@ -409,116 +415,104 @@ showMoreBtn.addEventListener('click', () => {
                     <!----------------------------------->
 
                     <!---------- Drinks list ------------>
-                    <ul class="menu__card-list">
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Cappuccino</h4>
-                            <p class="menu__card-description">
-                                Savor our cappuccino: espresso, steamed milk, foam; a classic Italian bliss.
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/cappuccino.png" alt="cappuccino"
-                                draggable="false">
-                        </li>
+<ul class="menu__card-list">
+  <li class="menu__card">
+    <h4 class="menu__card-title">Капучино</h4>
+    <p class="menu__card-description">
+      Класическо италианско кафе – еспресо с топло мляко и пухкава млечна пяна.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/cappuccino.png" alt="cappuccino" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Doppio</h4>
-                            <p class="menu__card-description">
-                                Try Doppio: double the espresso, double the intensity. Pure coffee
-                                perfection.
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/doppio3.jpg" alt="doppio" draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Допио</h4>
+    <p class="menu__card-description">
+      Двойна доза еспресо за почитателите на наситения вкус и силния аромат.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/doppio3.jpg" alt="doppio" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Latte</h4>
-                            <p class="menu__card-description">
-                                The Latte: where espresso meets steamed milk with a dash of foam. So creamy!
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/latte2.png" alt="latte" draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Лате</h4>
+    <p class="menu__card-description">
+      Меко и нежно кафе с повече мляко – идеално за спокоен следобед.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/latte2.png" alt="latte" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Mocha</h4>
-                            <p class="menu__card-description">
-                                Our Mocha: a fusion of espresso, creamy milk, and chocolate... yes, chocolate!
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/mocha2.jpg" alt="mocha" draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Мока</h4>
+    <p class="menu__card-description">
+      Съчетание от еспресо, горещо мляко и тъмен шоколад – наслада в чаша.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/mocha2.jpg" alt="mocha" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Americano</h4>
-                            <p class="menu__card-description">
-                                Yumm, Americano... It's like espresso's laid-back sibling, energizes you sip
-                                by sip!
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/americano2.png" alt="americano"
-                                draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Американо</h4>
+    <p class="menu__card-description">
+      Леко и приятно кафе, приготвено с еспресо и гореща вода – класика със стил.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/americano2.png" alt="americano" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Cortado</h4>
-                            <p class="menu__card-description">
-                                Espresso needs a smooth partner, and here it is! Mixed with steamed milk for a delight!
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/cortado2.jpg" alt="cortado"
-                                draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Кортадо</h4>
+    <p class="menu__card-description">
+      Баланс между силно еспресо и нежно мляко – малко, но запомнящо се.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/cortado2.jpg" alt="cortado" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Lungo</h4>
-                            <p class="menu__card-description">
-                                Seeking excitement? Try Lungo: espresso's daring cousin, brewed longer for a bold ride!
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/lungo2.png" alt="cappuccino"
-                                draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Лунго</h4>
+    <p class="menu__card-description">
+      Еспресо, приготвено с повече вода за по-дълъг и по-мек вкус.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/lungo2.png" alt="lungo" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Affogato</h4>
-                            <p class="menu__card-description">
-                                Savor our cappuccino: espresso, steamed milk, foam; a classic Italian bliss.
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/affogato3.jpg" alt="affogato"
-                                draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Афогато</h4>
+    <p class="menu__card-description">
+      Топло еспресо, излято върху топка ванилов сладолед – контраст и удоволствие.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/affogato3.jpg" alt="affogato" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Frappé</h4>
-                            <p class="menu__card-description">
-                                Savor our cappuccino: espresso, steamed milk, foam; a classic Italian bliss.
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/frappe2.jpg" alt=" frappé" draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Фрапе</h4>
+    <p class="menu__card-description">
+      Разхлаждаща напитка с кафе, лед и мляко – идеална за летните дни.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/frappe2.jpg" alt="frappé" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Machiatto</h4>
-                            <p class="menu__card-description">
-                                Savor our cappuccino: espresso, steamed milk, foam; a classic Italian bliss.
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/coffee-machiatto2.png" alt="machiatto"
-                                draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Макиато</h4>
+    <p class="menu__card-description">
+      Еспресо с леко докосване на млечна пяна – интензивен вкус с мек завършек.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/coffee-machiatto2.png" alt="machiatto" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Ristretto</h4>
-                            <p class="menu__card-description">
-                                Savor our cappuccino: espresso, steamed milk, foam; a classic Italian bliss.
-                            </p>
-                            <img class="menu__card-img" src="./assets/imgs/ristretto2.jpg" alt="Ristretto"
-                                draggable="false">
-                        </li>
+  <li class="menu__card">
+    <h4 class="menu__card-title">Ристрето</h4>
+    <p class="menu__card-description">
+      По-кратко и по-силно от еспресото – концентрирана доза аромат и енергия.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/ristretto2.jpg" alt="ristretto" draggable="false">
+  </li>
 
-                        <li class="menu__card">
-                            <h4 class="menu__card-title">Flat white</h4>
-                            <div class="menu__card-info">
+  <li class="menu__card">
+    <h4 class="menu__card-title">Флат Уайт</h4>
+    <p class="menu__card-description">
+      Кафе с кадифена текстура – еспресо и фин микропяна за перфектен баланс.
+    </p>
+    <img class="menu__card-img" src="./assets/imgs/flat-white2.jpg" alt="flat white" draggable="false">
+  </li>
+</ul>
 
-                                <p class="menu__card-description">
-                                    Savor our cappuccino: espresso, steamed milk, foam; a classic Italian bliss.
-                                </p>
-                            </div>
-                            <img class="menu__card-img" src="./assets/imgs/flat-white2.jpg" alt="flat white"
-                                draggable="false">
-                        </li>
-                    </ul>
                     <!----------------------------------->
 
                     <!------- Next slides buttons ------->
@@ -778,7 +772,7 @@ showMoreBtn.addEventListener('click', () => {
 
         <div class="powered-by">
           © 2025 Bene Bene | All Rights Reserved <br>
-          Powered by Kristiyan
+
         </div>
       </div>
     </div>

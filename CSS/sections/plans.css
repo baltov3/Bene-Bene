@@ -9,6 +9,7 @@
     background-size: cover;
     background-position: center;
     border-top: var(--border-thickness-2) double var(--clr-neutral-2);
+      border-bottom: 2px solid  hsl(25, 100%, 50%); /* Горна граница */
 }
 
 .plans-section__cards {

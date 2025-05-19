@@ -8,6 +8,7 @@
   padding: 3rem 1rem;
   gap: 40px;
   box-sizing: border-box;
+
 }
 
 /* Лява колона - форма */
@@ -109,7 +110,7 @@
 }
 
 .submit-btn {
-  background-color: #c93232;
+  background-color:  hsl(25, 100%, 50%);;
   color: #000;
   padding: 12px 80px;
   font-size: 1.5rem;
