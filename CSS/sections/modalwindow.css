@@ -38,9 +38,9 @@
 .modal-content h2,
 .modal-content p {
   font-family: "Montserrat", sans-serif;
-  color:  hsl(25, 100%, 50%);;
+  color:  hsl(30, 100%, 100%);;
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* Добави стил за бутона за затваряне */
@@ -135,13 +135,13 @@
   margin-top: 5px;
 }
 .modal-section-alergens h3{
-  font-size: 1.6em;
+  font-size: 1.5em;
   color: #eeeaea;
 margin-bottom: 20px;
 }
 
 .modal-section h3 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   color: #f9f9f9;
   margin-bottom: 5px;
 }
@@ -196,7 +196,15 @@ margin-bottom: 20px;
   
 }
 
+#modal-title 
+{
+   font-size: 1.5rem;
+}
 
+#modal-allergens-images
+{
+  margin-bottom: 15px;
+}
 @keyframes zoomIn {
   to {
     transform: scale(1);
