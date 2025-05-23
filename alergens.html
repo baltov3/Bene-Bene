@@ -34,6 +34,10 @@
     <!----------- JavaScript ------------>
 
     <script type="module" src="./JS/modules/navbar.js"></script>
+
+    <script>
+  console.log('Това работи!');
+</script>
     <!----------------------------------->
 
 </head>
@@ -69,7 +73,7 @@
                 <ul class="main-nav__list">
                     <li class="current main-nav__list-item">
                         <button>
-                            <a data-i18n="home_title" class="current main-nav__link" href="#hero" aria-current="page"
+                            <a data-i18n="home_title" class="current main-nav__link" href="index.html#hero" aria-current="page"
                                 aria-label="link to scroll to the home section">
                                 <i class="main-nav__icon fa fa-home" aria-hidden="true"></i> <span
                                     class="text-to-translate">Начало</span>
@@ -79,7 +83,7 @@
 
                     <li class="main-nav__list-item">
                         <button id="translate-home-btn">
-                            <a data-i18n="menu_title" class="main-nav__link" href="#menu"
+                            <a data-i18n="menu_title" class="main-nav__link" href="index.html#menu"
                                 aria-label="link to scroll to the menu section">
                                 <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i> <span
                                     class="text-to-translate">Меню</span>
@@ -89,7 +93,7 @@
 
                     <li class="main-nav__list-item">
                         <button>
-                            <a class="main-nav__link" href="#special-drinks"
+                            <a class="main-nav__link" href="index.html#special-drinks"
                                 aria-label="link to scroll to the special drinks section">
                                 <i class="main-nav__icon fa fa-coffee" aria-hidden="true"><span
                                         class="text-to-translate"></i><span class="text-to-translate">Напитки</span>
@@ -99,7 +103,7 @@
 
                     <li class="main-nav__list-item main-nav__list-item--plans">
                         <button>
-                            <a class="main-nav__link main-nav__link--plans" href="#plans-section"
+                            <a class="main-nav__link main-nav__link--plans" href="index.html#plans-section"
                                 aria-label="link to scroll to the plans section">
                                 <i class="main-nav__icon main-nav__icon--plans fa fa-gem" aria-hidden="true"></i>Нас
                             </a>
@@ -271,7 +275,7 @@
 
         <div class="powered-by">
           © 2025 Bene Bene | All Rights Reserved <br>
-          Powered by Kristiyan
+
         </div>
       </div>
     </div>
@@ -283,5 +287,181 @@
   
 
 </div>
+
+<script>
+  // Примерна дефиниция за updateCurrentClass (трябва да я промениш според твоята имплементация)
+  function updateCurrentClass(activeAnchor) {
+    // Премахва класа 'current' от всички навигационни линкове
+    document.querySelectorAll('.main-nav__list-item a.current').forEach(link => {
+      link.classList.remove('current');
+    });
+    // Добавя класа 'current' на активния линк
+    activeAnchor.classList.add('current');
+  }
+
+  // DOM селекции (всички необходими елементи)
+  const mediaQuery = window.matchMedia('(max-width: 50rem)');
+  const hamburger = document.querySelector('.main-nav__hamburger-menu');
+  const hamburgerIcon = hamburger.querySelector('i');
+  const mainNavWrapper = document.querySelector('.main-nav__wrapper');
+  const branding = mainNavWrapper.querySelector('.main-nav__branding');
+  const mainNavBtns = mainNavWrapper.querySelector('.main-nav-controls');
+  const mainNavList = document.querySelector('.main-nav__list'); // добавена селекция за mainNavList
+  const navbar = document.querySelector('.main-nav').parentElement;
+  const expandNavbarBtn = document.querySelector('#js-expand-navbar');
+  const lockNavbarBtn = document.querySelector('#js-lock-navbar');
+  const main = document.querySelector('main');
+  const controls = document.querySelector('.controls');
+  const footer = document.querySelector('footer');
+
+  let lastScrollTop = 0;
+
+  function handleMediaQueryChange(mediaQuery) {
+    if (!mainNavBtns || !mainNavList || !mainNavWrapper) {
+      console.error("Missing DOM elements:", { mainNavBtns, mainNavList, mainNavWrapper });
+      return;
+    }
+    const btnListItem = document.createElement('li');
+
+    if (mediaQuery.matches) {
+      btnListItem.classList.add('main-nav__list-item');
+      btnListItem.appendChild(mainNavBtns);
+      mainNavList.appendChild(btnListItem);
+      mainNavList.setAttribute('inert', '');
+      mainNavList.classList.add('transition-off');
+    } else {
+      mainNavWrapper.appendChild(mainNavBtns);
+      if(mainNavList.lastChild) mainNavList.removeChild(mainNavList.lastChild);
+      mainNavList.removeAttribute('inert');
+    }
+  }
+
+  function toggleNavbarOnClick() {
+    if (!lockNavbarBtn.classList.contains('locked')) {
+      if (navbar.classList.contains('expanded')) {
+        navbar.classList.remove('expanded');
+        navbar.classList.add('collapsed');
+        expandNavbarBtn.classList.remove('collapse');
+        expandNavbarBtn.classList.add('expand');
+      } else {
+        navbar.classList.add('expanded');
+        navbar.classList.remove('collapsed');
+        expandNavbarBtn.classList.remove('expand');
+        expandNavbarBtn.classList.add('collapse');
+      }
+    }
+  }
+
+  function toggleNavbarOnScroll() {
+    const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
+    if (!lockNavbarBtn.classList.contains('locked')) {
+      if (hamburger.classList.contains('closed') && currentScrollTop > lastScrollTop && currentScrollTop > 0) {
+        navbar.classList.remove('expanded');
+        navbar.classList.add('collapsed');
+        expandNavbarBtn.classList.remove('collapse');
+        expandNavbarBtn.classList.add('expand');
+      } else {
+        navbar.classList.remove('collapsed');
+        navbar.classList.add('expanded');
+        expandNavbarBtn.classList.remove('expand');
+        expandNavbarBtn.classList.add('collapse');
+      }
+    }
+    lastScrollTop = currentScrollTop;
+  }
+
+  function lockNavbar() {
+    const lockNavbarBtnIcon = lockNavbarBtn.firstElementChild;
+    if (!lockNavbarBtn.classList.contains('locked')) {
+      lockNavbarBtn.classList.add('locked');
+      lockNavbarBtnIcon.classList.remove('fa-lock-open');
+      lockNavbarBtnIcon.classList.add('fa-lock');
+      expandNavbarBtn.classList.add('disabled');
+      console.log('navbar is locked');
+    } else {
+      lockNavbarBtn.classList.remove('locked');
+      lockNavbarBtnIcon.classList.remove('fa-lock');
+      lockNavbarBtnIcon.classList.add('fa-lock-open');
+      expandNavbarBtn.classList.remove('disabled');
+      console.log('navbar is unlocked');
+    }
+  }
+
+  function updateCurrentSection(event) {
+    const targetAnchor = this.querySelector('.main-nav__link');
+    const targetId = targetAnchor.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    event.preventDefault();
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+    updateCurrentClass(targetAnchor);
+    if (mediaQuery.matches) toggleHamburgerMenu(event);
+  }
+
+  function updateCurrentSectionOnScroll() {
+    const sections = [...document.querySelectorAll('section')];
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      const scrollPosition = window.scrollY;
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        const navItem = document.querySelector(`.main-nav__list-item a[href="#${section.id}"]`);
+        if (navItem) updateCurrentClass(navItem);
+      }
+    });
+  }
+
+  function toggleMenuClasses() {
+    hamburger.classList.toggle('open');
+    hamburger.classList.toggle('closed');
+    hamburgerIcon.classList.toggle('fa-bars-staggered');
+    hamburgerIcon.classList.toggle('fa-bars');
+    mainNavList.classList.toggle('visible');
+    mainNavBtns.classList.toggle('visible');
+  }
+
+  function toggleHamburgerMenu(event) {
+    event.stopPropagation();
+    toggleMenuClasses();
+    mainNavList.classList.remove('transition-off');
+
+    if (hamburger.classList.contains('open') && mediaQuery.matches) {
+      document.body.classList.add('scroll-locked');
+      mainNavList.removeAttribute('inert');
+      branding.setAttribute('inert', '');
+      main.setAttribute('inert', '');
+      controls.setAttribute('inert', '');
+      footer.setAttribute('inert', '');
+    } else {
+      document.body.classList.remove('scroll-locked');
+      mainNavList.setAttribute('inert', '');
+      branding.removeAttribute('inert');
+      main.removeAttribute('inert');
+      controls.removeAttribute('inert');
+      footer.removeAttribute('inert');
+    }
+  }
+
+  const closeHamburgerClickOutside = e => hamburger.classList.contains('open') && !mainNavList.contains(e.target) && toggleHamburgerMenu(e);
+  const closeHamburgerPressEsc = e => hamburger.classList.contains('open') && e.key === 'Escape' && toggleHamburgerMenu(e);
+  const hideMenuOnResize = e => !mediaQuery.matches && hamburger.classList.contains('open') && toggleHamburgerMenu(e);
+
+  // Слушатели
+  mediaQuery.addEventListener('change', () => handleMediaQueryChange(mediaQuery));
+  window.addEventListener('scroll', toggleNavbarOnScroll);
+  hamburger.addEventListener('click', toggleHamburgerMenu);
+  expandNavbarBtn.addEventListener('click', toggleNavbarOnClick);
+  lockNavbarBtn.addEventListener('click', lockNavbar);
+  window.addEventListener('click', closeHamburgerClickOutside);
+  window.addEventListener('keydown', closeHamburgerPressEsc);
+  window.addEventListener('resize', hideMenuOnResize);
+
+  // Инициализация при зареждане на страницата
+  document.addEventListener('DOMContentLoaded', () => {
+    handleMediaQueryChange(mediaQuery);
+    updateCurrentSectionOnScroll();
+  });
+
+</script>
+
 </body>
 </html>
