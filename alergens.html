@@ -26,7 +26,9 @@
 
     <link rel="stylesheet" href="./CSS/utils/buttons.css">
     <link rel="stylesheet" href="./CSS/utils/misc.css">
-    
+        <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!----------------------------------->
 
     <!----------- JavaScript ------------>
@@ -37,8 +39,8 @@
 </head>
 <body>
  
-        <!--------- Main navigation --------->
-         <header class="expanded">
+<!------------- Header -------------->
+    <header class="expanded">
         <!--------- Main navigation --------->
         <nav class="main-nav" aria-label="primary navigation">
             <!-------- Navigation wrapper --------->
@@ -67,7 +69,7 @@
                 <ul class="main-nav__list">
                     <li class="current main-nav__list-item">
                         <button>
-                            <a data-i18n="home_title" class="current main-nav__link" href="index.html#hero" aria-current="page"
+                            <a data-i18n="home_title" class="current main-nav__link" href="#hero" aria-current="page"
                                 aria-label="link to scroll to the home section">
                                 <i class="main-nav__icon fa fa-home" aria-hidden="true"></i> <span
                                     class="text-to-translate">Начало</span>
@@ -77,7 +79,7 @@
 
                     <li class="main-nav__list-item">
                         <button id="translate-home-btn">
-                            <a data-i18n="menu_title" class="main-nav__link" href="index.html#menu"
+                            <a data-i18n="menu_title" class="main-nav__link" href="#menu"
                                 aria-label="link to scroll to the menu section">
                                 <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i> <span
                                     class="text-to-translate">Меню</span>
@@ -87,7 +89,7 @@
 
                     <li class="main-nav__list-item">
                         <button>
-                            <a class="main-nav__link" href="index.html#special-drinks"
+                            <a class="main-nav__link" href="#special-drinks"
                                 aria-label="link to scroll to the special drinks section">
                                 <i class="main-nav__icon fa fa-coffee" aria-hidden="true"><span
                                         class="text-to-translate"></i><span class="text-to-translate">Напитки</span>
@@ -97,7 +99,7 @@
 
                     <li class="main-nav__list-item main-nav__list-item--plans">
                         <button>
-                            <a class="main-nav__link main-nav__link--plans" href="index.html#plans-section"
+                            <a class="main-nav__link main-nav__link--plans" href="#plans-section"
                                 aria-label="link to scroll to the plans section">
                                 <i class="main-nav__icon main-nav__icon--plans fa fa-gem" aria-hidden="true"></i>Нас
                             </a>
@@ -106,7 +108,7 @@
 
                     <li class="main-nav__list-item">
                         <button id="lang-toggle" aria-label="Превключване на езика" class="main-nav__link">
-                            🌐BG <span id="lang-label"></span>
+                            <span id="lang-label"></span>
                         </button>
                     </li >
                 </ul>
@@ -119,7 +121,6 @@
         <!----------------------------------->
 
         <!------ Expand navbar button ------->
-
         <div class="main-nav-controls">
             <button id="js-expand-navbar" class="main-nav-controls__btn expand-navbar collapse" aria-hidden="true"
                 title="Show/hide menu">
@@ -213,7 +214,7 @@
             <input class="input" name="Email" placeholder="Имейл" type="email" required>
           </div>
           <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <p class="text-blk input-title">Телефонен номер</p>
+            <p class="text-blk input-title">Телефон</p>
             <input class="input" name="PhoneNumber" placeholder="Телефонен номер" type="tel">
           </div>
           <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12">
@@ -255,12 +256,18 @@
           </div>
         </div>
 
-        <div class="social-media-links">
-          <a href="https://www.instagram.com/molinaricoffeeboutique/">
-            <img class="social-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-          </a>
-         
-        </div>
+<div class="social-media-links">
+  <a href="https://www.google.com/maps/place/Bene+Bene+Nuts+%26+Coffee/@42.265491,23.1159656,17z/data=!3m1!4b1!4m6!3m5!1s0x14aae9f73a5ea5b1:0x386bd8c2d63622c4!8m2!3d42.2654871!4d23.1185405!16s%2Fg%2F11kc3k50z9?hl=bg&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+    <i class="fa fa-google fa-4x icon-3d"></i>
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=61575771792550" target="_blank">
+    <i class="fa fa-facebook fa-4x icon-3d"></i>
+  </a>
+  <a href="https://www.instagram.com/bene_bene_dupnica?igsh=OTJjd21icmhxcnZ5&utm_source=qr" target="_blank">
+    <i class="fa fa-instagram fa-4x icon-3d"></i>
+  </a>
+</div>
+
 
         <div class="powered-by">
           © 2025 Bene Bene | All Rights Reserved <br>

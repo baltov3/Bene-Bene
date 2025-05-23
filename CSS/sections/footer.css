@@ -154,12 +154,6 @@
   font-size: 1em;
 }
 
-/* Социални икони */
-.social-media-links img {
-  width: 30px;
-  margin-right: 10px;
-  cursor: pointer;
-}
 
 /* Footer текст */
 .powered-by {
@@ -191,5 +185,63 @@
     max-width: 100%;
     padding: 1rem;
     margin: 0;
+  }
+}
+
+.social-media-links{
+  margin-left: 5rem;
+}
+
+:root {
+  --redColor: rgb(236, 159, 14);
+  --blueColor: rgb(235, 182, 8);
+}
+
+.flex-center {
+  width: 100%;
+  min-height: 50vh;
+  background: #000;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-3d {
+  padding: 10px;
+  -webkit-animation: icon3d 200ms 10;
+          animation: icon3d 200ms 10;
+  color: #fff;
+}
+
+.icon-3d:hover {
+  -webkit-animation: icon3d 200ms infinite;
+          animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px var(--redColor), -5px -6px var(--blueColor);
+  }
+  25% {
+    text-shadow: -5px -6px var(--redColor), 5px 4px var(--blueColor);
+  }
+  50% {
+    text-shadow: 5px -4px var(--redColor), -8px 4px var(--blueColor);
+  }
+  75% {
+    text-shadow: -8px -4px var(--redColor), -5px -4px var(--blueColor);
+  }
+  100% {
+    text-shadow: -5px 0 var(--redColor), 5px -4px var(--blueColor);
   }
 }
