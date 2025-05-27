@@ -199,37 +199,37 @@
 <div class="footer-two-column-wrapper ">
   
   <!-- Лява колона: Контактна форма -->
-  <div class="contact-form-wrapper">
-    <form class="form-box" onsubmit="sendMail(event)">
-      <div class="container-block form-wrapper">
-        <div class="responsive-container-block form-grid">
-          <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6">
-            <p class="text-blk input-title">Име</p>
-            <input class="input" name="FirstName" placeholder="Име" required>
-          </div>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <p class="text-blk input-title">Фамилия</p>
-            <input class="input" name="LastName" placeholder="Фамилия" required>
-          </div>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <p class="text-blk input-title">Имейл</p>
-            <input class="input" name="Email" placeholder="Имейл" type="email" required>
-          </div>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <p class="text-blk input-title">Телефон</p>
-            <input class="input" name="PhoneNumber" placeholder="Телефонен номер" type="tel">
-          </div>
-          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12">
-<p class="text-blk input-title">Съобщение</p>
-<textarea class="textarea" name="Message" placeholder="Споделете какво мислите..." rows="5" required></textarea>
-          </div>
+ <div class="contact-form-wrapper">
+  <form class="form-box" id="contact-form">
+    <div class="container-block form-wrapper">
+      <div class="responsive-container-block form-grid">
+        <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6">
+          <p class="text-blk input-title">Име</p>
+          <input class="input" name="name" placeholder="Име" required>
         </div>
-        <div class="btn-wrapper">
-          <button class="submit-btn" type="submit">Изпрати</button>
+        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+          <p class="text-blk input-title">Фамилия</p>
+          <input class="input" name="LastName" placeholder="Фамилия" required>
+        </div>
+        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+          <p class="text-blk input-title">Имейл</p>
+          <input class="input" name="Email" placeholder="Имейл" type="email" required>
+        </div>
+        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+          <p class="text-blk input-title">Телефон</p>
+          <input class="input" name="PhoneNumber" placeholder="Телефонен номер" type="tel">
+        </div>
+        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12">
+          <p class="text-blk input-title">Съобщение</p>
+          <textarea class="textarea" name="message" placeholder="Споделете какво мислите..." rows="5" required></textarea>
         </div>
       </div>
-    </form>
-  </div>
+      <div class="btn-wrapper">
+        <button class="submit-btn" type="submit">Изпрати</button>
+      </div>
+    </div>
+  </form>
+</div>
 
   <!-- Дясна колона: Контактна информация -->
   <div class="contact-section" id="ifgi">
@@ -459,6 +459,33 @@
     updateCurrentSectionOnScroll();
   });
 
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("m0V4oLpCBcKdJFby1"); // замени с твоя EmailJS Public Key
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Добавяме текущото време като скрито поле
+    let now = new Date().toLocaleString("bg-BG");
+    let timeInput = document.createElement("input");
+    timeInput.type = "hidden";
+    timeInput.name = "time";
+    timeInput.value = now;
+    this.appendChild(timeInput);
+
+    // Изпращане чрез EmailJS
+    emailjs.sendForm("service_vjrxm34", "template_iybaijk", this)
+      .then(() => {
+        alert("Съобщението беше изпратено успешно!");
+        this.reset();
+      })
+      .catch((err) => {
+        console.error("Грешка при изпращане:", err);
+        alert("Възникна грешка. Опитайте отново.");
+      });
+  });
 </script>
 
 </body>
