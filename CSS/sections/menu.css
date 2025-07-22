@@ -292,16 +292,37 @@
 .menu-list {
   flex: 1 1 45%;
   background: rgba(255, 255, 255, 0.05);
+   overflow-y: auto;
   padding: 2rem;
   border-radius: 12px;
   backdrop-filter: blur(6px);
+  max-height: 350px;
+   cursor: grab;
+   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
-
+@media (max-width: 600px) {
+  .menu-list {
+    max-height: 220px; /* Smaller height for mobile */
+    padding: 1rem;
+  }
+}
+.menu-list:active {
+  cursor: grabbing;
+}
+.menu-list::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(0,0,0,0.1);
+}
+.menu-list::-webkit-scrollbar-thumb {
+  background: #c49a6c;
+  border-radius: 8px;
+}
 .menu-category {
   font-size: 2rem;
   color: hsl(25, 100%, 50%);;
   margin-bottom: 1rem;
 }
+
 
 .menu-item {
   display: flex;
@@ -314,6 +335,7 @@
   transition: all 0.3s ease;
   max-height: 1000px; /* някаква голяма стойност */
   overflow: hidden;
+   margin-bottom: 8px;
 }
 
 .menu-name {

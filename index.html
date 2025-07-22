@@ -47,43 +47,40 @@
 
     <!----------- JavaScript ------------>
     <script type="module" src="./JS/app.js"></script>
+    <!-- Add before </body> -->
+<script>
+const menuList = document.querySelector('.menu-list');
+let isDown = false;
+let startY;
+let scrollTop;
+
+menuList.addEventListener('mousedown', (e) => {
+  isDown = true;
+  menuList.classList.add('active');
+  startY = e.pageY - menuList.offsetTop;
+  scrollTop = menuList.scrollTop;
+});
+
+document.addEventListener('mouseup', () => {
+  isDown = false;
+  menuList.classList.remove('active');
+});
+
+menuList.addEventListener('mouseleave', () => {
+  isDown = false;
+  menuList.classList.remove('active');
+});
+
+menuList.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const y = e.pageY - menuList.offsetTop;
+  const walk = (y - startY) * 2; // scroll speed
+  menuList.scrollTop = scrollTop - walk;
+});
+</script>
 <style> 
 </style>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.menu-category-section').forEach(function (section) {
-      const items = section.querySelectorAll('.menu-item');
-      const showMoreBtn = section.querySelector('.show-more-btn');
-      const initialCount = 5;
-      let expanded = false;
-
-      // Скрий над 5-ия елемент
-      items.forEach((item, index) => {
-        if (index >= initialCount) item.classList.add('hidden');
-      });
-
-      if (items.length > initialCount) {
-        showMoreBtn.style.display = 'inline-block';
-
-showMoreBtn.addEventListener('click', () => {
-  if (!expanded) {
-    items.forEach(item => item.classList.remove('hidden'));
-    showMoreBtn.textContent = 'Покажи по-малко';
-    expanded = true;
-  } else {
-    items.forEach((item, index) => {
-      item.classList.toggle('hidden', index >= initialCount);
-    });
-    showMoreBtn.textContent = 'Покажи още';
-    expanded = false;
-  }
-});
-      } 
-    });
-  });
-</script>
-
-
     <!----------------------------------->
 </head>
 
@@ -553,13 +550,21 @@ showMoreBtn.addEventListener('click', () => {
       <div class="menu-item"><span class="menu-name">Лате</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="latte">?</button></div></div>
        <div class="menu-item"><span class="menu-name">Американо</span><span class="menu-price">2.00лв</span></div>
     <div class="menu-item"><span class="menu-name">Макиато</span><span class="menu-price">2.20лв</span></div>
+   <div class="menu-item"><span class="menu-name">Фрапе</span><span class="menu-price">2.90лв</span></div>
+    <div class="menu-item"><span class="menu-name">Мока</span><span class="menu-price">3.20лв</span></div>
 
-    <!-- Скритите елементи -->
-    <div class="menu-item hidden"><span class="menu-name">Фрапе</span><span class="menu-price">2.90лв</span></div>
-    <div class="menu-item hidden"><span class="menu-name">Мока</span><span class="menu-price">3.20лв</span></div>
+       <div class="menu-item"><span class="menu-name">Макиато</span><span class="menu-price">2.20лв</span></div>
+   <div class="menu-item"><span class="menu-name">Фрапе</span><span class="menu-price">2.90лв</span></div>
+    <div class="menu-item"><span class="menu-name">Мока</span><span class="menu-price">3.20лв</span></div>
 
-    <!-- Бутон за показване -->
-    <button class="show-more-btn">Покажи още</button>
+
+       <div class="menu-item"><span class="menu-name">Макиато</span><span class="menu-price">2.20лв</span></div>
+   <div class="menu-item"><span class="menu-name">Фрапе</span><span class="menu-price">2.90лв</span></div>
+    <div class="menu-item"><span class="menu-name">Мока</span><span class="menu-price">3.20лв</span></div>
+
+       <div class="menu-item"><span class="menu-name">Макиато</span><span class="menu-price">2.20лв</span></div>
+   <div class="menu-item"><span class="menu-name">Фрапе</span><span class="menu-price">2.90лв</span></div>
+    <div class="menu-item"><span class="menu-name">Мока</span><span class="menu-price">3.20лв</span></div>
     </div>
   </div>
 
