@@ -131,34 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // ------------------------------------------------
-let currentLang = 'en';
-
-
-
-// Функция за превод на текста
-function translatePage(lang) {
-  const elements = document.querySelectorAll('[data-i18n]');
-  elements.forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    const translation = translations[lang][key];
-    if (translation) {
-      // Променяме само текста в span, който е зададен за превод
-      const span = el.querySelector('.text-to-translate');
-      if (span) {
-        span.textContent = translation;
-      }
-    }
-  });
-
-  // Смени текста в бутона за език
-  const langToggle = document.getElementById('lang-toggle');
-  langToggle.innerHTML = lang === 'bg' ? '🌐EN <span id="lang-label"></span>' : '🌐BG <span id="lang-label"></span>';
-}
-
-document.getElementById('lang-toggle').addEventListener('click', () => {
-  currentLang = currentLang === 'bg' ? 'en' : 'bg';
-  translatePage(currentLang);
-});
 
 //---------------------------------------------------
 
