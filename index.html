@@ -2,7 +2,7 @@
 <html lang="bg">
 
 <head>
-    <!--------- Website title ----------->
+    <!------- Website title ----------->
     <title>Bene Bene</title>
     <!----------------------------------->
 
@@ -48,37 +48,6 @@
     <!----------- JavaScript ------------>
     <script type="module" src="./JS/app.js"></script>
     <!-- Add before </body> -->
-<script>
-const menuList = document.querySelector('.menu-list');
-let isDown = false;
-let startY;
-let scrollTop;
-
-menuList.addEventListener('mousedown', (e) => {
-  isDown = true;
-  menuList.classList.add('active');
-  startY = e.pageY - menuList.offsetTop;
-  scrollTop = menuList.scrollTop;
-});
-
-document.addEventListener('mouseup', () => {
-  isDown = false;
-  menuList.classList.remove('active');
-});
-
-menuList.addEventListener('mouseleave', () => {
-  isDown = false;
-  menuList.classList.remove('active');
-});
-
-menuList.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const y = e.pageY - menuList.offsetTop;
-  const walk = (y - startY) * 2; // scroll speed
-  menuList.scrollTop = scrollTop - walk;
-});
-</script>
 <style> 
 </style>
     <!----------------------------------->
@@ -91,81 +60,83 @@ menuList.addEventListener('mousemove', (e) => {
     <header class="expanded">
         <!--------- Main navigation --------->
         <nav class="main-nav" aria-label="primary navigation">
-            <!-------- Navigation wrapper --------->
-            <div class="main-nav__wrapper" id="primary-navigation">
-                <!------- Navigation branding ------->
-                <ul class="main-nav__branding">
-                    <!---------- Website logo ----------->
-                    <img class="main-nav__img-logo" src="./assets/imgs/Bene Bene on Rustic Wood.png"
-                        alt="Website logo: A cup of hot coffee.">
-                    <!----------------------------------->
-
-                    <!---------- Website title ---------->
-                    <h1><a class="main-nav__title">Bene Bene</a></h1>
-                    <!----------------------------------->
-                </ul>
-                <!----------------------------------->
-
-                <!--------- Hamburger menu ---------->
-                <button class="main-nav__hamburger-menu closed" aria-label="main navigation menu"
-                    aria-controls="primary-navigation" aria-expanded="false">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-                <!----------------------------------->
-
-                <!--------- Navigation list --------->
-                <ul class="main-nav__list">
-                    <li class="current main-nav__list-item">
-                        <button>
-                            <a data-i18n="home_title" class="current main-nav__link" href="#hero-logo" aria-current="page"
-                                aria-label="link to scroll to the home section">
-                                <i class="main-nav__icon fa fa-home" aria-hidden="true"></i> <span
-                                    class="text-to-translate">Начало</span>
-                            </a>
-                        </button>
-                    </li>
-
-                    <li class="main-nav__list-item">
-                        <button id="translate-home-btn">
-                            <a data-i18n="menu_title" class="main-nav__link" href="#menu"
-                                aria-label="link to scroll to the menu section">
-                                <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i> <span
-                                    class="text-to-translate">Меню</span>
-                            </a>
-                        </button>
-                    </li>
-
-                    <li class="main-nav__list-item">
-                        <button>
-                            <a class="main-nav__link" href="#special-drinks"
-                                aria-label="link to scroll to the special drinks section">
-                                <i class="main-nav__icon fa fa-coffee" aria-hidden="true"><span
-                                        class="text-to-translate"></i><span class="text-to-translate">Напитки</span>
-                            </a>
-                        </button>
-                    </li class="main-nav__list-item">
-
-                    <li class="main-nav__list-item main-nav__list-item--plans">
-                        <button>
-                            <a class="main-nav__link main-nav__link--plans" href="#plans-section"
-                                aria-label="link to scroll to the plans section">
-                                <i class="main-nav__icon main-nav__icon--plans fa fa-gem" aria-hidden="true"></i>Нас
-                            </a>
-                        </button>
-                    </li>
-
-                    <li class="main-nav__list-item">
-                        <button id="lang-toggle" aria-label="Превключване на езика" class="main-nav__link">
-                            <span id="lang-label"></span>
-                        </button>
-                    </li >
-                </ul>
-                <!----------------------------------->
-
-                <!----------------------------------->
-            </div>
+    <!-------- Navigation wrapper --------->
+    <div class="main-nav__wrapper" id="primary-navigation">
+        <!------- Navigation branding ------->
+        <ul class="main-nav__branding">
+            <!---------- Website logo ----------->
+            <img class="main-nav__img-logo" src="./assets/imgs/Bene Bene on Rustic Wood.png"
+                alt="Website logo: A cup of hot coffee.">
             <!----------------------------------->
-        </nav>
+
+            <!---------- Website title ---------->
+            <h1><a class="main-nav__title">Bene Bene</a></h1>
+            <!----------------------------------->
+        </ul>
+        <!----------------------------------->
+
+        <!--------- Hamburger menu ---------->
+        <button class="main-nav__hamburger-menu closed" aria-label="main navigation menu"
+            aria-controls="primary-navigation" aria-expanded="false">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <!----------------------------------->
+
+        <!--------- Navigation list --------->
+        <ul class="main-nav__list">
+            <li class="current main-nav__list-item">
+                <button>
+                    <a data-i18n="home_title" class="current main-nav__link" href="#hero-section" aria-current="page"
+                        aria-label="link to scroll to the home section">
+                        <i class="main-nav__icon fa fa-home" aria-hidden="true"></i> <span
+                            class="text-to-translate">Начало</span>
+                    </a>
+                </button>
+            </li>
+
+            <li class="main-nav__list-item">
+                <button id="translate-home-btn">
+                    <a data-i18n="menu_title" class="main-nav__link" href="#menu"
+                        aria-label="link to scroll to the menu section">
+                        <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i> <span
+                            class="text-to-translate">Меню</span>
+                    </a>
+                </button>
+            </li>
+
+            <li class="main-nav__list-item">
+                <button>
+                    <a class="main-nav__link" href="#special-drinks"
+                        aria-label="link to scroll to the special drinks section">
+                        <i class="main-nav__icon fa fa-coffee" aria-hidden="true"><span
+                                class="text-to-translate"></i><span class="text-to-translate">Напитки</span>
+                    </a>
+                </button>
+            </li>
+
+            <li class="main-nav__list-item main-nav__list-item--plans">
+                <button>
+                    <a class="main-nav__link main-nav__link--plans" href="#plans-section"
+                        aria-label="link to scroll to the plans section">
+                        <i class="main-nav__icon main-nav__icon--plans fa fa-gem" aria-hidden="true"></i>Нас
+                    </a>
+                </button>
+            </li>
+
+            <li class="main-nav__list-item">
+                <button id="lang-toggle" aria-label="Превключване на езика" class="main-nav__link">
+                    <span id="lang-label"></span>
+                </button>
+            </li>
+        </ul>
+        <!----------------------------------->
+
+        <!-- Add this missing element -->
+        <div class="main-nav__btns" style="display:none"></div>
+        <!----------------------------------->
+    </div>
+    <!----------------------------------->
+</nav>
         <!----------------------------------->
 
         <!------ Expand navbar button ------->
@@ -187,7 +158,7 @@ menuList.addEventListener('mousemove', (e) => {
     <main>
         
 
-<section class="hero-section">
+<section class="hero-section" id="hero-section">
   <div class="hero-overlay">
     <img src="./assets/imgs/Bene Bene on Rustic Wood.png" alt="Bene Bene Logo" class="hero-logo">
 

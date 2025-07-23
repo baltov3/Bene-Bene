@@ -184,8 +184,8 @@ document.querySelector('.controls__scroll-btn[data-action="bottom"]').addEventLi
 window.addEventListener('resize', hideMenuOnResize); // Fires the hideMenuOnResize function
 document.body.addEventListener('keydown', closeHamburgerPressEsc); // Closes the menu when pressing ESCAPE
 mediaQuery.addEventListener('change', handleMediaQueryChange); // Listens for changes in screen size
-startSlideshow(heroCarousel); // Starts the slideshow when the page loads
-startSlideshow(specialCarousel); // Starts the slideshow when the page loads
+if (heroCarousel) startSlideshow(heroCarousel);
+if (specialCarousel) startSlideshow(specialCarousel);
 
 menuCarousels.forEach(carousel => { // Adds event listeners for mouse events on each menu carousel
     carousel.addEventListener('mousedown', (event) => handleMouseDown(event, carousel));
