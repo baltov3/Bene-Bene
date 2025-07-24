@@ -1,12 +1,3 @@
-/* great-vibes-regular - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Great Vibes';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../assets/fonts/great-vibes/great-vibes-v18-latin-regular.woff2') format('woff2');
-}
-
 /* cormorant-sc-regular - latin */
 @font-face {
     font-display: swap;
@@ -23,4 +14,12 @@
     font-style: normal;
     font-weight: 700;
     src: url('../../assets/fonts/cormorant-sc/cormorant-sc-v18-latin-700.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Bad Script', cursive;
+}
+
+h1, h2, h3, .menu-title, .menu-category {
+  font-family: 'Cormorant SC', serif;
 }

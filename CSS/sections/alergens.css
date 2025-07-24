@@ -52,29 +52,6 @@
   position: relative;
   transition: transform 0.4s ease;
 }
-.modal-content h2,
-.modal-content p {
-  font-family: "Montserrat", sans-serif;
-  color: #c1272d;
-  margin: 10px 0;
-}
-
-.price-circle {
-  position: absolute;
-  top: -45px;
-  transform: translateX(-50%);
-  background: linear-gradient(135deg, grey, #c1272d);
-  color: white;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  font-family: "Montserrat", sans-serif;
-}
 
 .price-circle span {
   font-size: 1.2rem;
@@ -153,16 +130,6 @@
 .modal-section p {
   color: #ddd;
 }
-.close {
-  font-family: "Courier New", Courier, monospace;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #c1272d
-}
-
 
 .allergen-container {
   display: flex;

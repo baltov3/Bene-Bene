@@ -42,7 +42,6 @@
 }
 
 .form-head h2 {
-  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -91,7 +90,6 @@
 .input-title {
   font-size: 1.4rem;
   font-style: italic;
-  font-family: "Bad Script", cursive;
   margin-bottom: 5px;
   color: #fff;
   display: block;

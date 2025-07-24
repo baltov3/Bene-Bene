@@ -1,5 +1,7 @@
 /* ----------- Menu styles ----------- */
-
+h1, h2, h3, .menu-title, .menu-category {
+  font-family: 'Cormorant SC', serif;
+}
 .menu {
     border-top: var(--border-thickness-2) double var(--clr-neutral-2);
     background: linear-gradient(90deg, var(--bg-dark-1), var(--clr-neutral-5), var(--bg-dark-1));
@@ -328,8 +330,6 @@
   justify-content: space-between;
   padding: 0.5rem 0;
   border-bottom: 1px solid #333;
-  opacity: 1;
-  transform: scaleY(1);
   transform-origin: top;
    margin-bottom: 8px;
 }
