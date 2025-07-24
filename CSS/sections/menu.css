@@ -273,7 +273,6 @@
   justify-content: center;
   gap: 2rem;
   margin-bottom: 6rem;
-  flex-wrap: wrap;
 }
 
 .menu-category-section.reverse {
@@ -332,9 +331,6 @@
   opacity: 1;
   transform: scaleY(1);
   transform-origin: top;
-  transition: all 0.3s ease;
-  max-height: 1000px; /* някаква голяма стойност */
-  overflow: hidden;
    margin-bottom: 8px;
 }
 
@@ -357,6 +353,5 @@
   .menu-image,
   .menu-list {
     flex: 1 1 100%;
-    max-width: 100%;
   }
 }
