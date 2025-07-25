@@ -271,10 +271,24 @@ h1, h2, h3, .menu-title, .menu-category {
 .menu-category-section {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 2rem;
   margin-bottom: 6rem;
+
+  width: 100%;
+  min-height: 350px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  /* Or simply: margin: 0 auto 6rem auto; */
+}
+.menu-image,
+.menu-list {
+  flex: 1 1 45%;
+  min-height: 350px;
+  max-height: 350px;
+  box-sizing: border-box;
 }
 
 .menu-category-section.reverse {
@@ -291,16 +305,16 @@ h1, h2, h3, .menu-title, .menu-category {
 }
 
 .menu-list {
-  flex: 1 1 45%;
   background: rgba(255, 255, 255, 0.05);
-   overflow-y: auto;
+  overflow-y: auto;
   padding: 2rem;
   border-radius: 12px;
   backdrop-filter: blur(6px);
-  max-height: 350px;
-   cursor: grab;
-   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+  /* Remove max-height here if you use min/max-height above */
 }
+
 @media (max-width: 600px) {
   .menu-list {
     max-height: 220px; /* Smaller height for mobile */
@@ -343,15 +357,28 @@ h1, h2, h3, .menu-title, .menu-category {
   color: hsl(25, 100%, 50%);
 }
 
-/* Responsive layout */
+@media (max-width: 1000px) {
+  .menu-category-section {
+    max-width: 100%;
+    min-height: 300px;
+  }
+  .menu-image,
+  .menu-list {
+    min-height: 300px;
+    max-height: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-category-section,
   .menu-category-section.reverse {
     flex-direction: column;
+    min-height: unset;
+    max-width: 100%;
   }
-
   .menu-image,
   .menu-list {
-    flex: 1 1 100%;
+    min-height: 220px;
+    max-height: 220px;
   }
 }
