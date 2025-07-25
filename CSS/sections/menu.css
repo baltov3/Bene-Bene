@@ -356,7 +356,20 @@ h1, h2, h3, .menu-title, .menu-category {
   font-size: 1.2rem;
   color: hsl(25, 100%, 50%);
 }
-
+.info-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;      /* aligns with text */
+  margin-left: 0.3em;          /* space from price */
+  position: relative;
+  bottom: 3px;                    /* adjust this value up/down as needed */
+}
+.info-btn {
+  background: none;
+  border: none;
+  
+}
 @media (max-width: 1000px) {
   .menu-category-section {
     max-width: 100%;
@@ -380,5 +393,16 @@ h1, h2, h3, .menu-title, .menu-category {
   .menu-list {
     min-height: 220px;
     max-height: 220px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-category-section {
+    flex-direction: column;
+  }
+  .menu-list {
+    order: 1;
+  }
+  .menu-image {
+    order: 2;
   }
 }
