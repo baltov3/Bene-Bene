@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     border-top: var(--border-thickness-2) double var(--clr-neutral-2);
-      border-bottom: 2px solid  hsl(25, 100%, 50%); /* Горна граница */
+    border-bottom: 2px solid  hsl(25, 100%, 50%); /* Горна граница */
 }
 
 .plans-section__cards {
@@ -45,6 +45,14 @@
     max-width: clamp(15rem, 10.685344827586206rem + 11.494252873563218vw, 21.875rem);
     transition: var(--transition-time-2) ease;
     box-shadow: var(--h-offset) var(--v-offset) var(--b-radius) var(--s-radius) var(--box-shadow-clr, var(--clr-neutral-6));
+       width: 320px;           /* Set a fixed width for all cards */
+    min-height: 280px;      /* Set a fixed or minimum height for all cards */
+    max-width: 320px;       /* Match width and max-width for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced nicely */
+    align-items: stretch;
+    overflow: visible;
 }
 
 .plans-section__card:hover {
