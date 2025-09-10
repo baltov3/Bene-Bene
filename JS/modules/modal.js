@@ -6,7 +6,7 @@ export const products = {
     volume: "390ml",
     advice: "Комбинирайте с бисквити за още по-добър вкус.(Безплатно)",
     reminder: "Може да добавите сироп по избор.",
-    allergens: ["/assets/imgs/milk.png"]
+    allergens: ["assets/imgs/milk.png"]
   },
   espresso: {
     title: "Еспресо",
