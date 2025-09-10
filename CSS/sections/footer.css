@@ -28,8 +28,8 @@
   background-color: #111;
   border-radius: 15px;
   color: #fff;
-  font-family: "Bad Script", cursive;
   box-sizing: border-box;
+  font-size: 1.2em;
 }
 .text-content {
   text-align: center;

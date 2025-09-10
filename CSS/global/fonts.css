@@ -1,25 +1,33 @@
-/* cormorant-sc-regular - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Cormorant SC';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../assets/fonts/cormorant-sc/cormorant-sc-v18-latin-regular.woff2') format('woff2');
+/* Global font settings: use Inter everywhere (system fallback included) */
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* cormorant-sc-700 - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Cormorant SC';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../../assets/fonts/cormorant-sc/cormorant-sc-v18-latin-700.woff2') format('woff2');
+/* Make sure this file is loaded early (before component styles) */
+html, body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-body {
-  font-family: 'Bad Script', cursive;
+/* Force headings, buttons, inputs, etc. to use the same font too */
+h1, h2, h3, h4, h5, h6,
+button, input, textarea, select, a {
+  font-family: var(--font-sans);
 }
 
-h1, h2, h3, .menu-title, .menu-category {
-  font-family: 'Cormorant SC', serif;
+/* Prevent component scoping from accidentally using different font stacks */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* don't set font-family here to avoid breaking components that intentionally change it */
+}
+
+/* OPTIONAL: small-screen tweak */
+@media (max-width: 480px) {
+  html { font-size: 15px; } /* slightly smaller base on very small screens */
 }
