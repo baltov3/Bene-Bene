@@ -248,7 +248,7 @@ h1, h2, h3, .menu-title, .menu-category {
   padding: 3rem 1rem;
   background-color: #1a1a1a;
   color: white;
-  font-family: "Bad Script", cursive;
+  
 }
 
 .menu-title-container {
@@ -258,13 +258,13 @@ h1, h2, h3, .menu-title, .menu-category {
 }
 
 .menu-title-wrapper h1.menu-title {
-  font-size: 3rem;
+  font-size: 4rem;
   color: hsl(25, 100%, 50%);;
   margin-bottom: 3.5rem;
 }
 
 .menu-title-wrapper h3.menu-subtitle {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   color: #aaa;
 }
 
