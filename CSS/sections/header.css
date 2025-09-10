@@ -95,7 +95,6 @@ header.collapsed {
 .main-nav__title {
     display: inline-block;
     font-size: 0;
-    font-family: var(--font-2), 'Times New Roman', Times, serif;
     font-weight: bold;
     color: var(--clr-neutral-1);
     border: var(--border-thickness-1) double var(--clr-neutral-3);
@@ -167,7 +166,6 @@ header.collapsed {
 }
 
 .main-nav__link {
-    font-family: var(--font-1), 'Times New Roman', Times, serif;
     font-weight: bold;
     transition: var(--transition-time-1);
 }
