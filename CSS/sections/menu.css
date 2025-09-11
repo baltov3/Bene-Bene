@@ -406,3 +406,14 @@ h1, h2, h3, .menu-title, .menu-category {
     order: 2;
   }
 }
+
+@media (max-width: 600px) {
+  .menu-list::-webkit-scrollbar {
+    width: 8px;
+    background: rgba(0,0,0,0.1);
+  }
+  .menu-list::-webkit-scrollbar-thumb {
+    background: #c49a6c;
+    border-radius: 8px;
+  }
+}
