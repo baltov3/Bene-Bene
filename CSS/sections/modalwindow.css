@@ -210,3 +210,51 @@ margin-bottom: 20px;
     transform: scale(1);
   }
 }
+
+/* Responsive styles for modal window */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 84%;
+    max-width: 98vw;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .price-circle {
+    width: 65px;
+    height: 65px;
+    top: -35px;
+    font-size: 1rem;
+  }
+  .price-circle span {
+    font-size: 1rem;
+  }
+  .price-circle small {
+    font-size: 0.7rem;
+  }
+
+  .modal .close {
+    font-size: 1.3rem;
+    top: 5px;
+    right: 8px;
+  }
+
+  .modal-section,
+  .modal-section-alergens {
+    padding: 8px;
+    font-size: 0.95em;
+  }
+
+  .allergen-icon {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+  }
+
+  .info-toggle {
+    width: 38px;
+    height: 38px;
+    left: -30px;
+    bottom: -10px;
+  }
+}
