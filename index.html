@@ -2,833 +2,969 @@
 <html lang="bg">
 
 <head>
-    <title>Bene Bene</title>
-    <!----------------------------------->
+  <title>Bene Bene</title>
+  <!----------------------------------->
 
-    <!----------- Meta data ------------->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Carlos Filipe">
-    <meta name="description"
-        content="Welcome to Bene Bene! We specialize in serving the best coffee drinks you will ever find. Visit us for a cozy atmosphere and a delightful coffee experience.">
-    <meta name="keywords"
-        content="coffee, cafe, The Coffee Shop, beverages, espresso, cappuccino, latte, coffee shop, cozy cafe, coffeehouse">
-    <!----------------------------------->
+  <!----------- Meta data ------------->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Carlos Filipe">
+  <meta name="description"
+    content="Welcome to Bene Bene! We specialize in serving the best coffee drinks you will ever find. Visit us for a cozy atmosphere and a delightful coffee experience.">
+  <meta name="keywords"
+    content="coffee, cafe, The Coffee Shop, beverages, espresso, cappuccino, latte, coffee shop, cozy cafe, coffeehouse">
+  <!----------------------------------->
 
-    <!------------- Icons --------------->
-    <link rel="stylesheet" href="./assets/misc/fontawesome-free-6.5.1-web/css/all.css">
-    <link rel="icon" type="image/x-icon" href="./assets/imgs/logo.png">
-    <!----------------------------------->
+  <!------------- Icons --------------->
+  <link rel="stylesheet" href="./assets/misc/fontawesome-free-6.5.1-web/css/all.css">
+  <link rel="icon" type="image/x-icon" href="./assets/imgs/logo.png">
+  <!----------------------------------->
 
-    <!---------- Stylesheets ------------>
-    <link rel="stylesheet" href="./CSS/global/fonts.css">
-    <link rel="stylesheet" href="./CSS/global/boilerplate.css">
-    <link rel="stylesheet" href="./CSS/global/custom-props.css">
-    <link rel="stylesheet" href="./CSS/global/typography.css">
+  <!---------- Stylesheets ------------>
+  <link rel="stylesheet" href="./CSS/global/fonts.css">
+  <link rel="stylesheet" href="./CSS/global/boilerplate.css">
+  <link rel="stylesheet" href="./CSS/global/custom-props.css">
+  <link rel="stylesheet" href="./CSS/global/typography.css">
 
-    <link rel="stylesheet" href="./CSS/sections/header.css">
-    <link rel="stylesheet" href="./CSS/sections/hero.css">
-    <link rel="stylesheet" href="./CSS/sections/menu.css">
-    <link rel="stylesheet" href="./CSS/sections/special-drinks.css">
-    <link rel="stylesheet" href="./CSS/sections/plans.css">
-    <link rel="stylesheet" href="./CSS/sections/controls.css">
-    <link rel="stylesheet" href="./CSS/sections/footer.css">
-    <link rel="stylesheet" href="./CSS/sections/modalwindow.css">
-     <link rel="stylesheet" href="./CSS/sections/loader.css">
+  <link rel="stylesheet" href="./CSS/sections/header.css">
+  <link rel="stylesheet" href="./CSS/sections/hero.css">
+  <link rel="stylesheet" href="./CSS/sections/menu.css">
+  <link rel="stylesheet" href="./CSS/sections/special-drinks.css">
+  <link rel="stylesheet" href="./CSS/sections/plans.css">
+  <link rel="stylesheet" href="./CSS/sections/controls.css">
+  <link rel="stylesheet" href="./CSS/sections/footer.css">
+  <link rel="stylesheet" href="./CSS/sections/modalwindow.css">
+  <link rel="stylesheet" href="./CSS/sections/loader.css">
 
-    <link rel="stylesheet" href="./CSS/utils/buttons.css">
-    <link rel="stylesheet" href="./CSS/utils/misc.css">
+  <link rel="stylesheet" href="./CSS/utils/buttons.css">
+  <link rel="stylesheet" href="./CSS/utils/misc.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <!----------- JavaScript ------------>
-    <script type="module" src="./JS/app.js"></script>
-    <!-- Add before </body> -->
-<style> 
-</style>
-    <!----------------------------------->
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!----------- JavaScript ------------>
+  <script type="module" src="./JS/app.js"></script>
+  <!-- Add before </body> -->
+  <style>
+  </style>
+  <!----------------------------------->
 </head>
 
 <body>
 
-    <!------------- Header -------------->
-    <header class="expanded">
-        <!--------- Main navigation --------->
-        <nav class="main-nav" aria-label="primary navigation">
-    <!-------- Navigation wrapper --------->
-    <div class="main-nav__wrapper" id="primary-navigation">
+  <!------------- Header -------------->
+  <header class="expanded">
+    <!--------- Main navigation --------->
+    <nav class="main-nav" aria-label="primary navigation">
+      <!-------- Navigation wrapper --------->
+      <div class="main-nav__wrapper" id="primary-navigation">
         <!------- Navigation branding ------->
         <ul class="main-nav__branding">
-            <!---------- Website logo ----------->
-             <li> <img class="main-nav__img-logo" src="./assets/imgs/Bene%20Bene%20on%20Rustic%20Wood.png" alt="Website logo: A cup of hot coffee."></li>
-  
-            <!---------- Website title ---------->
-            <li>
+          <!---------- Website logo ----------->
+          <li> <img class="main-nav__img-logo" src="./assets/imgs/Bene%20Bene%20on%20Rustic%20Wood.png"
+              alt="Website logo: A cup of hot coffee."></li>
+
+          <!---------- Website title ---------->
+          <li>
             <h1><a class="main-nav__title">Bene Bene</a></h1>
-            </li>
-            <!----------------------------------->
+          </li>
+          <!----------------------------------->
         </ul>
         <!----------------------------------->
 
         <!--------- Hamburger menu ---------->
         <button class="main-nav__hamburger-menu closed" aria-label="main navigation menu"
-            aria-controls="primary-navigation" aria-expanded="false">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+          aria-controls="primary-navigation" aria-expanded="false">
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <!----------------------------------->
 
         <!--------- Navigation list --------->
         <ul class="main-nav__list">
-            <li class="current main-nav__list-item">
-                <button>
-                    <a data-i18n="home_title" class="current main-nav__link" href="#hero-section" aria-current="page"
-                        aria-label="link to scroll to the home section">
-                        <i class="main-nav__icon fa fa-home" aria-hidden="true"></i> <span
-                            class="text-to-translate">Начало</span>
-                    </a>
-                </button>
-            </li>
+          <li class="current main-nav__list-item">
+            <button>
+              <a data-i18n="home_title" class="current main-nav__link" href="#hero-section" aria-current="page"
+                aria-label="link to scroll to the home section">
+                <i class="main-nav__icon fa fa-home" aria-hidden="true"></i> <span
+                  class="text-to-translate">Начало</span>
+              </a>
+            </button>
+          </li>
 
-            <li class="main-nav__list-item main-nav__list-item--plans">
-                <button>
-                    <a class="main-nav__link main-nav__link--plans" href="#plans-section"
-                        aria-label="link to scroll to the plans section">
-                        <i class="main-nav__icon main-nav__icon--plans fa fa-gem" aria-hidden="true"></i>Нас
-                    </a>
-                </button>
-            </li>
+          <li class="main-nav__list-item main-nav__list-item--plans">
+            <button>
+              <a class="main-nav__link main-nav__link--plans" href="#plans-section"
+                aria-label="link to scroll to the plans section">
+                <i class="main-nav__icon main-nav__icon--plans fa fa-gem" aria-hidden="true"></i>Нас
+              </a>
+            </button>
+          </li>
 
-            
-                        <li class="main-nav__list-item">
-                <button>
-                    <a class="main-nav__link" href="#special-drinks"
-                        aria-label="link to scroll to the special drinks section">
-                        <i class="main-nav__icon fa fa-coffee" aria-hidden="true"></i><span class="text-to-translate">Напитки</span>
-                    </a>
-                </button>
-            </li>
-            <li class="main-nav__list-item">
-                <button id="translate-home-btn">
-                    <a data-i18n="menu_title" class="main-nav__link" href="#menu"
-                        aria-label="link to scroll to the menu section">
-                        <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i> <span
-                            class="text-to-translate">Меню</span>
-                    </a>
-                </button>
-            </li>
 
-    
+          <li class="main-nav__list-item">
+            <button>
+              <a class="main-nav__link" href="#special-drinks"
+                aria-label="link to scroll to the special drinks section">
+                <i class="main-nav__icon fa fa-coffee" aria-hidden="true"></i><span
+                  class="text-to-translate">Напитки</span>
+              </a>
+            </button>
+          </li>
+          <li class="main-nav__list-item">
+            <button id="translate-home-btn">
+              <a data-i18n="menu_title" class="main-nav__link" href="#menu"
+                aria-label="link to scroll to the menu section">
+                <i class="main-nav__icon fa fa-cutlery" aria-hidden="true"></i> <span
+                  class="text-to-translate">Меню</span>
+              </a>
+            </button>
+          </li>
+
+
         </ul>
         <!----------------------------------->
 
         <!-- Add this missing element -->
         <div class="main-nav__btns" style="display:none"></div>
         <!----------------------------------->
+      </div>
+      <!----------------------------------->
+    </nav>
+    <!----------------------------------->
+
+    <!------ Expand navbar button ------->
+    <div class="main-nav-controls">
+      <button id="js-expand-navbar" class="main-nav-controls__btn expand-navbar collapse" aria-hidden="true"
+        title="Show/hide menu">
+        <i class="fa fa-chevron-up"></i>
+      </button>
+
+      <button id="js-lock-navbar" class="main-nav-controls__btn" title="Lock current menu state">
+        <i class="fa fa-lock-open"></i>
+      </button>
     </div>
     <!----------------------------------->
-</nav>
-        <!----------------------------------->
+  </header>
+  <!----------------------------------->
 
-        <!------ Expand navbar button ------->
-        <div class="main-nav-controls">
-            <button id="js-expand-navbar" class="main-nav-controls__btn expand-navbar collapse" aria-hidden="true"
-                title="Show/hide menu">
-                <i class="fa fa-chevron-up"></i>
-            </button>
+  <!--------- Main sections ----------->
+  <main>
 
-            <button id="js-lock-navbar" class="main-nav-controls__btn" title="Lock current menu state">
-                <i class="fa fa-lock-open"></i>
-            </button>
+
+    <section class="hero-section" id="hero-section">
+      <div class="hero-overlay">
+        <img src="./assets/imgs/Bene%20Bene%20on%20Rustic%20Wood.png" alt="Bene Bene Logo" class="hero-logo">
+      </div>
+    </section>
+    <!----------------------------------->
+
+    <!---------- Plans section ---------->
+    <section class="plans-section" id="plans-section">
+
+      <!-- Секция заглавие -->
+      <div class="why_us">
+        <h2 class="section-title">Защо да изберете <span class="highlight-three">нас?</span></h2>
+      </div>
+      <div class="plans-section__cards">
+
+
+        <div class="plans-section__card plans-section__card--silver-plan">
+
+          <!----------- Card title ------------>
+          <h2 class="plans-section__card-title">Вкус, който остава в спомените</h2>
+          <!----------------------------------->
+
+          <!------- Plan features list -------->
+          <ul class="plans-section__card-list plans-section__card-list--silver-plan">
+            <li class="plans-section__card-list-item">Ароматни напитки, приготвени с грижа <i class="fa fa-check"></i>
+            </li>
+            <li class="plans-section__card-list-item">Отстъпки за редовни клиенти <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Изненадващи предложения <i class="fa fa-check"></i>
+            </li>
+            <li class="plans-section__card-list-item">Напитки по специален повод <i class="fa fa-check"></i>
+            </li>
+            <li class="plans-section__card-list-item">Сладки и солени изкушения <i class="fa fa-check"></i>
+            </li>
+            <li class="plans-section__card-list-item">Покани приятел заедно с теб <i class="fa fa-check"></i></li>
+          </ul>
+          <!----------------------------------->
+
+
+          <!----------- Card image ------------>
+          <img src="./assets/imgs/silver.jpg" alt="silver plan image">
+          <!----------------------------------->
+        </div>
+
+        <div class="plans-section__card plans-section__card--diamond-plan">
+          <h2 class="plans-section__card-title">Премиум грижа и отношение</h2>
+          <!----------------------------------->
+
+          <!------- Plan features list -------->
+          <ul class="plans-section__card-list plans-section__card-list--diamond-plan">
+            <li class="plans-section__card-list-item">Ексклузивни напитки и рецепти <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Лични отстъпки и предложения <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Подаръци за лоялност <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Почерпка за специален повод <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Вкусни десерти и кроасани <i class="fa fa-check"></i>
+            </li>
+          </ul>
+          <!----------------------------------->
+
+
+
+          <!----------------------------------->
+
+          <!----------- Card image ------------>
+          <img src="./assets/imgs/diamond.jpg" alt="diamond plan image">
+          <!----------------------------------->
+        </div>
+
+        <div class="plans-section__card plans-section__card--gold-plan">
+          <!----------- Card title ------------>
+          <h2 class="plans-section__card-title">Грижа към всеки клиент</h2>
+          <!----------------------------------->
+
+          <!------- Plan features list -------->
+          <ul class="plans-section__card-list plans-section__card-list--gold-plan">
+            <li class="plans-section__card-list-item">Любими напитки за всеки вкус <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Постоянни сезонни промоции <i class="fa fa-check"></i>
+            </li>
+            <li class="plans-section__card-list-item">Събития с безплатна консумация <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Ограничени сладки изделия <i class="fa fa-check"></i>
+            </li>
+
+          </ul>
+          <!----------------------------------->
+
+
+          <!----------------------------------->
+
+          <!----------- Card image ------------>
+          <img src="./assets/imgs/gold.jpg" alt="gold plan image">
+          <!----------------------------------->
+        </div>
+      </div>
+    </section>
+    <!-------- Hero section --------->
+    <section id="hero" class="hero">
+      <!-------- Hero slides ---------->
+      <div class="hero__slides slides">
+        <!------------- Slide --------------->
+        <div class="hero__slide slide active">
+          <!---------- Slide image ------------>
+          <img class="hero__slide-img" src="./assets/imgs/cappuccino-2.jpg"
+            alt="Slide one image: Delicious creamy Cappuccino.">
+          <!----------------------------------->
         </div>
         <!----------------------------------->
-    </header>
+
+        <!------------- Slide --------------->
+        <div class="hero__slide slide">
+          <!---------- Slide image ------------>
+          <img class="hero__slide-img" src="./assets/imgs/affogato3.jpg"
+            alt="Slide one image: Delicious Affogato desert.">
+          <!----------------------------------->
+        </div>
+        <!----------------------------------->
+
+        <!------------- Slide --------------->
+        <div class="hero__slide slide">
+          <!---------- Slide image ------------>
+          <img class="hero__slide-img" src="./assets/imgs/coffee-machiatto2.png"
+            alt="Slide one image: Delicious Mocha with foam.">
+          <!----------------------------------->
+        </div>
+        <!----------------------------------->
+
+        <!------------- Slide --------------->
+        <div class="hero__slide slide">
+          <!---------- Slide image ------------>
+          <img class="hero__slide-img" src="./assets/imgs/americano2.png"
+            alt="Slide four image: Pouring a hot and delicious Doppio coffee into a cup.">
+          <!----------------------------------->
+        </div>
+        <!----------------------------------->
+      </div>
+      <!----------------------------------->
+
+      <!---------- Slide content ---------->
+      <div class="hero__slide-content wrapper">
+        <!------------- Slider -------------->
+        <div class="hero__slider">
+          <!------ Previous slide button ------>
+          <button class="action-button prev" aria-label="previous slide">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <!----------------------------------->
+
+          <!-------- Slider indicators -------->
+          <div class="hero__slide-indicators">
+            <button class="hero__slide-indicator slide-indicator checked" aria-label="slide 1"
+              aria-current="step"></button>
+            <button class="hero__slide-indicator slide-indicator" aria-label="slide 2"></button>
+            <button class="hero__slide-indicator slide-indicator" aria-label="slide 3"></button>
+            <button class="hero__slide-indicator slide-indicator" aria-label="slide 4"></button>
+          </div>
+          <!----------------------------------->
+
+          <!-------- Next slide button -------->
+          <button class="action-button next" aria-label="next slide">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </button>
+          <!----------------------------------->
+        </div>
+        <!----------------------------------->
+
+        <div class="hero__slide-description-wrapper">
+          <!----------- Slide title ----------->
+          <h3 class="hero__slide-title"><i class="fa-solid fa-mug-hot"></i>Bene Bene</h3>
+          <!----------------------------------->
+
+          <!------------- Ratings ------------->
+          <div class="hero__ratings">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <!----------------------------------->
+
+          <!-------- Slide description -------->
+          <p class="hero__slide-description">В <span class="highlight-two"> Bene
+              Bene</span> издигаме тази обичана класика до нови висоти, създавайки капучино, което олицетворява
+            същността на занаятчийското съвършенство.
+          </p>
+          <!----------------------------------->
+
+          <!---------- Slide buttons ---------->
+          <div class="hero__slide-btns">
+
+            <a href="#menu" class="hero__slide-btn highlited-btn primary">Виж напитките</a>
+
+          </div>
+          <!----------------------------------->
+        </div>
+      </div>
+      <!----------------------------------->
+    </section>
     <!----------------------------------->
 
-    <!--------- Main sections ----------->
-    <main>
-        
+    <!--------- Menu section ---------->
+    <section class="menu">
 
-<section class="hero-section" id="hero-section">
-  <div class="hero-overlay">
-    <img src="./assets/imgs/Bene%20Bene%20on%20Rustic%20Wood.png" alt="Bene Bene Logo" class="hero-logo">
-  </div>
-</section>
+      <!-- Секция заглавие -->
+      <div class="why_us">
+        <h2 class="section-title">Искате ли да опитате нашите най-вкусни <span class="highlight-three">напитки?</span>
+        </h2>
+      </div>
+      <div class="menu__content">
+        <!-------- Drinks carousel ---------->
+        <div class="menu__carousel">
+          <!----- Previous slides buttons ----->
+          <div class="menu__slider-btns-wrapper">
+
+            <button class="menu__slider-btn prev sliding-multiplier">
+
+            </button>
+          </div>
+          <!----------------------------------->
+
+          <!---------- Drinks list ------------>
+          <ul class="menu__card-list">
+            <li class="menu__card">
+              <h4 class="menu__card-title">Капучино</h4>
+              <p class="menu__card-description">
+                Класическо италианско кафе – еспресо с топло мляко и пухкава млечна пяна.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/cappuccino.png" alt="cappuccino" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Допио</h4>
+              <p class="menu__card-description">
+                Двойна доза еспресо за почитателите на наситения вкус и силния аромат.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/doppio3.jpg" alt="doppio" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Лате</h4>
+              <p class="menu__card-description">
+                Меко и нежно кафе с повече мляко – идеално за спокоен следобед.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/latte2.png" alt="latte" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Мока</h4>
+              <p class="menu__card-description">
+                Съчетание от еспресо, горещо мляко и тъмен шоколад – наслада в чаша.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/mocha2.jpg" alt="mocha" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Американо</h4>
+              <p class="menu__card-description">
+                Леко и приятно кафе, приготвено с еспресо и гореща вода – класика със стил.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/americano2.png" alt="americano" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Кортадо</h4>
+              <p class="menu__card-description">
+                Баланс между силно еспресо и нежно мляко – малко, но запомнящо се.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/cortado2.jpg" alt="cortado" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Лунго</h4>
+              <p class="menu__card-description">
+                Еспресо, приготвено с повече вода за по-дълъг и по-мек вкус.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/lungo2.png" alt="lungo" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Афогато</h4>
+              <p class="menu__card-description">
+                Топло еспресо, излято върху топка ванилов сладолед – контраст и удоволствие.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/affogato3.jpg" alt="affogato" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Фрапе</h4>
+              <p class="menu__card-description">
+                Разхлаждаща напитка с кафе, лед и мляко – идеална за летните дни.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/frappe2.jpg" alt="frappé" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Макиато</h4>
+              <p class="menu__card-description">
+                Еспресо с леко докосване на млечна пяна – интензивен вкус с мек завършек.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/coffee-machiatto2.png" alt="machiatto" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Ристрето</h4>
+              <p class="menu__card-description">
+                По-кратко и по-силно от еспресото – концентрирана доза аромат и енергия.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/ristretto2.jpg" alt="ristretto" draggable="false">
+            </li>
+
+            <li class="menu__card">
+              <h4 class="menu__card-title">Флат Уайт</h4>
+              <p class="menu__card-description">
+                Кафе с кадифена текстура – еспресо и фин микропяна за перфектен баланс.
+              </p>
+              <img class="menu__card-img" src="./assets/imgs/flat-white2.jpg" alt="flat white" draggable="false">
+            </li>
+          </ul>
+
+          <!----------------------------------->
+
+          <!------- Next slides buttons ------->
+          <div class="menu__slider-btns-wrapper">
+
+            <button class="menu__slider-btn next sliding-multiplier">
+
+            </button>
+          </div>
+          <!----------------------------------->
+        </div>
         <!----------------------------------->
 
-        <!---------- Plans section ---------->
-        <section class="plans-section" id="plans-section">
-
-            <!-- Секция заглавие -->
-            <div class="why_us">
-                <h2 class="section-title">Защо да изберете <span class="highlight-three">нас?</span></h2>
-            </div>
-            <div class="plans-section__cards">
-
-
-                <div class="plans-section__card plans-section__card--silver-plan">
-
-                    <!----------- Card title ------------>
-                    <h2 class="plans-section__card-title">Вкус, който остава в спомените</h2>
-                    <!----------------------------------->
-
-                    <!------- Plan features list -------->
-                    <ul class="plans-section__card-list plans-section__card-list--silver-plan">
-                        <li class="plans-section__card-list-item">Ароматни напитки, приготвени с грижа <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Отстъпки за редовни клиенти <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Изненадващи предложения <i class="fa fa-check"></i>
-                        </li>
-                        <li class="plans-section__card-list-item">Напитки по специален повод <i class="fa fa-check"></i>
-                        </li>
-                        <li class="plans-section__card-list-item">Сладки и солени изкушения <i class="fa fa-check"></i>
-                        </li>
-                        <li class="plans-section__card-list-item">Покани приятел заедно с теб <i
-                                class="fa fa-check"></i></li>
-                    </ul>
-                    <!----------------------------------->
-
-
-                    <!----------- Card image ------------>
-                    <img src="./assets/imgs/silver.jpg" alt="silver plan image">
-                    <!----------------------------------->
-                </div>
-
-                <div class="plans-section__card plans-section__card--diamond-plan">
-                    <h2 class="plans-section__card-title">Премиум грижа и отношение</h2>
-                    <!----------------------------------->
-
-                    <!------- Plan features list -------->
-                    <ul class="plans-section__card-list plans-section__card-list--diamond-plan">
-                        <li class="plans-section__card-list-item">Ексклузивни напитки и рецепти <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Лични отстъпки и предложения <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Подаръци за лоялност <i class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Почерпка за специален повод <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Вкусни десерти и кроасани <i class="fa fa-check"></i>
-                        </li>
-                    </ul>
-                    <!----------------------------------->
-
-
-
-                    <!----------------------------------->
-
-                    <!----------- Card image ------------>
-                    <img src="./assets/imgs/diamond.jpg" alt="diamond plan image">
-                    <!----------------------------------->
-                </div>
-
-                <div class="plans-section__card plans-section__card--gold-plan">
-                    <!----------- Card title ------------>
-                    <h2 class="plans-section__card-title">Грижа към всеки клиент</h2>
-                    <!----------------------------------->
-
-                    <!------- Plan features list -------->
-                    <ul class="plans-section__card-list plans-section__card-list--gold-plan">
-                        <li class="plans-section__card-list-item">Любими напитки за всеки вкус <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Постоянни сезонни промоции <i class="fa fa-check"></i>
-                        </li>
-                        <li class="plans-section__card-list-item">Събития с безплатна консумация <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Ограничени сладки изделия <i class="fa fa-check"></i>
-                        </li>
-
-                    </ul>
-                    <!----------------------------------->
-
-
-                    <!----------------------------------->
-
-                    <!----------- Card image ------------>
-                    <img src="./assets/imgs/gold.jpg" alt="gold plan image">
-                    <!----------------------------------->
-                </div>
-            </div>
-        </section>
-        <!-------- Hero section --------->
-        <section id="hero" class="hero">
-            <!-------- Hero slides ---------->
-            <div class="hero__slides slides">
-                <!------------- Slide --------------->
-                <div class="hero__slide slide active">
-                    <!---------- Slide image ------------>
-                    <img class="hero__slide-img" src="./assets/imgs/cappuccino-2.jpg"
-                        alt="Slide one image: Delicious creamy Cappuccino.">
-                    <!----------------------------------->
-                </div>
-                <!----------------------------------->
-
-                <!------------- Slide --------------->
-                <div class="hero__slide slide">
-                    <!---------- Slide image ------------>
-                    <img class="hero__slide-img" src="./assets/imgs/affogato3.jpg"
-                        alt="Slide one image: Delicious Affogato desert.">
-                    <!----------------------------------->
-                </div>
-                <!----------------------------------->
-
-                <!------------- Slide --------------->
-                <div class="hero__slide slide">
-                    <!---------- Slide image ------------>
-                    <img class="hero__slide-img" src="./assets/imgs/coffee-machiatto2.png"
-                        alt="Slide one image: Delicious Mocha with foam.">
-                    <!----------------------------------->
-                </div>
-                <!----------------------------------->
-
-                <!------------- Slide --------------->
-                <div class="hero__slide slide">
-                    <!---------- Slide image ------------>
-                    <img class="hero__slide-img" src="./assets/imgs/americano2.png"
-                        alt="Slide four image: Pouring a hot and delicious Doppio coffee into a cup.">
-                    <!----------------------------------->
-                </div>
-                <!----------------------------------->
-            </div>
-            <!----------------------------------->
-
-            <!---------- Slide content ---------->
-            <div class="hero__slide-content wrapper">
-                <!------------- Slider -------------->
-                <div class="hero__slider">
-                    <!------ Previous slide button ------>
-                    <button class="action-button prev" aria-label="previous slide">
-                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    </button>
-                    <!----------------------------------->
-
-                    <!-------- Slider indicators -------->
-                    <div class="hero__slide-indicators">
-                        <button class="hero__slide-indicator slide-indicator checked" aria-label="slide 1"
-                            aria-current="step"></button>
-                        <button class="hero__slide-indicator slide-indicator" aria-label="slide 2"></button>
-                        <button class="hero__slide-indicator slide-indicator" aria-label="slide 3"></button>
-                        <button class="hero__slide-indicator slide-indicator" aria-label="slide 4"></button>
-                    </div>
-                    <!----------------------------------->
-
-                    <!-------- Next slide button -------->
-                    <button class="action-button next" aria-label="next slide">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </button>
-                    <!----------------------------------->
-                </div>
-                <!----------------------------------->
-
-                <div class="hero__slide-description-wrapper">
-                    <!----------- Slide title ----------->
-                    <h3 class="hero__slide-title"><i class="fa-solid fa-mug-hot"></i>Bene Bene</h3>
-                    <!----------------------------------->
-
-                    <!------------- Ratings ------------->
-                    <div class="hero__ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <!----------------------------------->
-
-                    <!-------- Slide description -------->
-                    <p class="hero__slide-description">В <span class="highlight-two">  Bene
-                            Bene</span> издигаме тази обичана класика до нови висоти, създавайки капучино, което олицетворява същността на занаятчийското съвършенство.
-                    </p>
-                    <!----------------------------------->
-
-                    <!---------- Slide buttons ---------->
-                    <div class="hero__slide-btns">
-          
-                        <a href="#menu" class="hero__slide-btn highlited-btn primary">Виж напитките</a>
-
-                    </div>
-                    <!----------------------------------->
-                </div>
-            </div>
-            <!----------------------------------->
-        </section>
         <!----------------------------------->
+    </section>
+    <!----------------------------------->
 
-        <!--------- Menu section ---------->
-        <section  class="menu">
-            
-<!-- Секция заглавие -->
-            <div class="why_us">
-                <h2 class="section-title">Искате ли да опитате нашите най-вкусни <span class="highlight-three">напитки?</span></h2>
-            </div>
-            <div class="menu__content">
-                <!-------- Drinks carousel ---------->
-                <div class="menu__carousel">
-                    <!----- Previous slides buttons ----->
-                    <div class="menu__slider-btns-wrapper">
-                       
-                        <button class="menu__slider-btn prev sliding-multiplier">
-                           
-                        </button>
-                    </div>
-                    <!----------------------------------->
+    <!----- Special drinks section ------>
+    <section id="menu" class="menu-section plans-section">
+      <div class="menu-title-container">
+        <div class="menu-title-wrapper">
+          <h3 class="menu-subtitle">Нашето</h3>
+          <h1 class="menu-title">Меню</h1>
+          <div class="menu-animation coffee-cup"></div>
+          <div class="menu-animation biscuit"></div>
+          <div class="menu-animation sandwich"></div>
+        </div>
+      </div>
 
-                    <!---------- Drinks list ------------>
-<ul class="menu__card-list">
-  <li class="menu__card">
-    <h4 class="menu__card-title">Капучино</h4>
-    <p class="menu__card-description">
-      Класическо италианско кафе – еспресо с топло мляко и пухкава млечна пяна.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/cappuccino.png" alt="cappuccino" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Допио</h4>
-    <p class="menu__card-description">
-      Двойна доза еспресо за почитателите на наситения вкус и силния аромат.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/doppio3.jpg" alt="doppio" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Лате</h4>
-    <p class="menu__card-description">
-      Меко и нежно кафе с повече мляко – идеално за спокоен следобед.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/latte2.png" alt="latte" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Мока</h4>
-    <p class="menu__card-description">
-      Съчетание от еспресо, горещо мляко и тъмен шоколад – наслада в чаша.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/mocha2.jpg" alt="mocha" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Американо</h4>
-    <p class="menu__card-description">
-      Леко и приятно кафе, приготвено с еспресо и гореща вода – класика със стил.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/americano2.png" alt="americano" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Кортадо</h4>
-    <p class="menu__card-description">
-      Баланс между силно еспресо и нежно мляко – малко, но запомнящо се.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/cortado2.jpg" alt="cortado" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Лунго</h4>
-    <p class="menu__card-description">
-      Еспресо, приготвено с повече вода за по-дълъг и по-мек вкус.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/lungo2.png" alt="lungo" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Афогато</h4>
-    <p class="menu__card-description">
-      Топло еспресо, излято върху топка ванилов сладолед – контраст и удоволствие.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/affogato3.jpg" alt="affogato" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Фрапе</h4>
-    <p class="menu__card-description">
-      Разхлаждаща напитка с кафе, лед и мляко – идеална за летните дни.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/frappe2.jpg" alt="frappé" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Макиато</h4>
-    <p class="menu__card-description">
-      Еспресо с леко докосване на млечна пяна – интензивен вкус с мек завършек.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/coffee-machiatto2.png" alt="machiatto" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Ристрето</h4>
-    <p class="menu__card-description">
-      По-кратко и по-силно от еспресото – концентрирана доза аромат и енергия.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/ristretto2.jpg" alt="ristretto" draggable="false">
-  </li>
-
-  <li class="menu__card">
-    <h4 class="menu__card-title">Флат Уайт</h4>
-    <p class="menu__card-description">
-      Кафе с кадифена текстура – еспресо и фин микропяна за перфектен баланс.
-    </p>
-    <img class="menu__card-img" src="./assets/imgs/flat-white2.jpg" alt="flat white" draggable="false">
-  </li>
-</ul>
-
-                    <!----------------------------------->
-
-                    <!------- Next slides buttons ------->
-                    <div class="menu__slider-btns-wrapper">
-                     
-                        <button class="menu__slider-btn next sliding-multiplier">
-                           
-                        </button>
-                    </div>
-                    <!----------------------------------->
-                </div>
-                <!----------------------------------->
-
-            <!----------------------------------->
-        </section>
-        <!----------------------------------->
-
-        <!----- Special drinks section ------>
-   <section id="menu" class="menu-section plans-section">
-  <div class="menu-title-container">
-    <div class="menu-title-wrapper">
-      <h3 class="menu-subtitle">Нашето</h3>
-      <h1 class="menu-title">Меню</h1>
-      <div class="menu-animation coffee-cup"></div>
-      <div class="menu-animation biscuit"></div>
-      <div class="menu-animation sandwich"></div>
-    </div>
-  </div>
-
-  <!-- Категория 1 -->
-  <div class="menu-category-section">
-    <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
-    <div class="menu-list">
-      <h3 class="menu-category">Кафе напитки</h3>
-      <div class="menu-item"><span class="menu-name">Еспресо Costa/Lavazza</span> <div class="menu-meta"><span class="menu-price">1.50лв</span>  <button class="info-btn" data-product-id="espresso"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Кафе с мляко Costa/Lavazza</span> <div class="menu-meta"><span class="menu-price">1.50лв</span>  <button class="info-btn" data-product-id="milkCoffee"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Капучино Costa</span> <div class="menu-meta"><span class="menu-price">1.50лв</span>  <button class="info-btn" data-product-id="cappuccino"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Лате Макиато Costa</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="latteMacchiato"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-             <div class="menu-item"><span class="menu-name">Мокачино Costa</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="mochaccino"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-    <div class="menu-item"><span class="menu-name">Мляко с Нес</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="nesMilk"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-         <div class="menu-item"><span class="menu-name">3 в 1</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="threeInOne"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-          <div class="menu-item"><span class="menu-name">Бяло фрапе</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="whiteFrappe"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-    </div>
-  </div>
-
-  <!-- Категория 2 (обратен ред) -->
-  <div class="menu-category-section .reverse">
-    <div class="menu-list">
-      <h3 class="menu-category">Сладки изкушения</h3>
-      <div class="menu-item"><span class="menu-name">Чийзкейк</span><span class="menu-price">4.50лв</span></div>
-      <div class="menu-item"><span class="menu-name">Кроасан с шоколад</span><span class="menu-price">3.00лв</span></div>
-      <div class="menu-item"><span class="menu-name">Мъфин</span><span class="menu-price">2.80лв</span></div>
-    </div>
-    <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
-  </div>
-
-  <!-- Категория 3 -->
-  <div class="menu-category-section">
-    <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
-    <div class="menu-list">
-      <h3 class="menu-category">Протеинови шейкове</h3>
-      <div class="menu-item"><span class="menu-name">Бял шоколад с малина</span> <div class="menu-meta"><span class="menu-price">2.50лв</span>  <button class="info-btn" data-product-id="proteinWithRaspberry"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Фъстъчено масло</span> <div class="menu-meta"><span class="menu-price">2.50лв</span>  <button class="info-btn" data-product-id="peanutButter"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Солен карамел</span> <div class="menu-meta"><span class="menu-price">2.50лв</span>  <button class="info-btn" data-product-id="saltedCaramel"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Шоколад с лешник (Нутела)</span> <div class="menu-meta"><span class="menu-price">2.50лв</span>  <button class="info-btn" data-product-id="nutella"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-    </div>
-  </div>
-
-    <div class="menu-category-section .reverse">
-    <div class="menu-list">
-      <h3 class="menu-category">Лимонади</h3>
-      <div class="menu-item"><span class="menu-name">Манго</span> <div class="menu-meta"><span class="menu-price">3.00лв</span>  <button class="info-btn" data-product-id="mangoLemonade"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Бъз</span> <div class="menu-meta"><span class="menu-price">3.00лв</span>  <button class="info-btn" data-product-id="elderLemonade"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Горски плодове</span> <div class="menu-meta"><span class="menu-price">3.00лв</span>  <button class="info-btn" data-product-id="forestFruitLemonade"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Малина</span> <div class="menu-meta"><span class="menu-price">3.00лв</span>  <button class="info-btn" data-product-id="raspberryLemonade"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Ягода</span> <div class="menu-meta"><span class="menu-price">3.00лв</span>  <button class="info-btn" data-product-id="raspberryLemonade"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Портокал</span> <div class="menu-meta"><span class="menu-price">3.00лв</span>  <button class="info-btn" data-product-id="orangeLemonade"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Вишна</span> <div class="menu-meta"><span class="menu-price">3.00лв</span>  <button class="info-btn" data-product-id="cherryLemonade"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-
-    </div>
+      <!-- Категория 1 -->
       <div class="menu-category-section">
-    <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
-    <div class="menu-list">
-      <h3 class="menu-category">>Бъбъл тий</h3>
-      <div class="menu-item"><span class="menu-name">Малина</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="proteinWithRaspberry"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Ягода</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="peanutButter"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Боровинка</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="saltedCaramel"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Манго</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="nutella"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Праскова</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="proteinWithRaspberry"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Банан</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="peanutButter"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Мента</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="saltedCaramel"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Шоколад</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="nutella"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-       <div class="menu-item"><span class="menu-name">Крем карамел</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="saltedCaramel"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-      <div class="menu-item"><span class="menu-name">Таро</span> <div class="menu-meta"><span class="menu-price">3.50лв</span>  <button class="info-btn" data-product-id="nutella"><img src="./assets/imgs/info-icon.png" alt="Information" class="info-icon" /></button></div></div>
-    </div>
-  </div>
-    <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
-  </div>
-</section>
-<section class="plans-section" id="plans-section">
+        <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
+        <div class="menu-list">
+          <h3 class="menu-category">Кафе напитки</h3>
+          <div class="menu-item"><span class="menu-name">Еспресо Costa/Lavazza</span>
+            <div class="menu-meta"><span class="menu-price">1.50лв</span> <button class="info-btn"
+                data-product-id="espresso"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Кафе с мляко Costa/Lavazza</span>
+            <div class="menu-meta"><span class="menu-price">1.50лв</span> <button class="info-btn"
+                data-product-id="milkCoffee"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Капучино Costa</span>
+            <div class="menu-meta"><span class="menu-price">1.50лв</span> <button class="info-btn"
+                data-product-id="cappuccino"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Лате Макиато Costa</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="latteMacchiato"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Мокачино Costa</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="mochaccino"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Мляко с Нес</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="nesMilk"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">3 в 1</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="threeInOne"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Бяло фрапе</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="whiteFrappe"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+        </div>
+      </div>
 
-            <!-- Секция заглавие -->
-            <div class="why_us">
-                <h2 class="section-title">Опитай топ предложенията <span class="highlight-three">на Bene Bene!</span></h2>
-            </div>
+      <!-- Категория 2 (обратен ред) -->
+      <div class="menu-category-section .reverse">
+        <div class="menu-list">
+          <h3 class="menu-category">Сладки изкушения</h3>
+          <div class="menu-item"><span class="menu-name">Чийзкейк</span><span class="menu-price">4.50лв</span></div>
+          <div class="menu-item"><span class="menu-name">Кроасан с шоколад</span><span class="menu-price">3.00лв</span>
+          </div>
+          <div class="menu-item"><span class="menu-name">Мъфин</span><span class="menu-price">2.80лв</span></div>
+        </div>
+        <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
+      </div>
 
-            <div class="plans-section__cards">
+      <!-- Категория 3 -->
+      <div class="menu-category-section">
+        <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
+        <div class="menu-list">
+          <h3 class="menu-category">Протеинови шейкове</h3>
+          <div class="menu-item"><span class="menu-name">Бял шоколад с малина</span>
+            <div class="menu-meta"><span class="menu-price">2.50лв</span> <button class="info-btn"
+                data-product-id="proteinWithRaspberry"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Фъстъчено масло</span>
+            <div class="menu-meta"><span class="menu-price">2.50лв</span> <button class="info-btn"
+                data-product-id="peanutButter"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Солен карамел</span>
+            <div class="menu-meta"><span class="menu-price">2.50лв</span> <button class="info-btn"
+                data-product-id="saltedCaramel"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Шоколад с лешник (Нутела)</span>
+            <div class="menu-meta"><span class="menu-price">2.50лв</span> <button class="info-btn"
+                data-product-id="nutella"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+        </div>
+      </div>
+<!-- Категория 4 (обратен ред) -->
+      <div class="menu-category-section reverse">
+        <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
+        <div class="menu-list">
+          <h3 class="menu-category">Лимонади</h3>
+          <div class="menu-item"><span class="menu-name">Манго</span>
+            <div class="menu-meta"><span class="menu-price">3.00лв</span> <button class="info-btn"
+                data-product-id="mangoLemonade"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Бъз</span>
+            <div class="menu-meta"><span class="menu-price">3.00лв</span> <button class="info-btn"
+                data-product-id="elderLemonade"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Горски плодове</span>
+            <div class="menu-meta"><span class="menu-price">3.00лв</span> <button class="info-btn"
+                data-product-id="forestFruitLemonade"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Малина</span>
+            <div class="menu-meta"><span class="menu-price">3.00лв</span> <button class="info-btn"
+                data-product-id="raspberryLemonade"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Ягода</span>
+            <div class="menu-meta"><span class="menu-price">3.00лв</span> <button class="info-btn"
+                data-product-id="raspberryLemonade"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Портокал</span>
+            <div class="menu-meta"><span class="menu-price">3.00лв</span> <button class="info-btn"
+                data-product-id="orangeLemonade"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Вишна</span>
+            <div class="menu-meta"><span class="menu-price">3.00лв</span> <button class="info-btn"
+                data-product-id="cherryLemonade"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Категория 5 -->
+      <div class="menu-category-section">
+        <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
+        <div class="menu-list">
+          <h3 class="menu-category">Бъбъл тий</h3>
+          <div class="menu-item"><span class="menu-name">Малина</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaRaspberry"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Ягода</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaStrawberry"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Боровинка</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaBlueberry"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Манго</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaMango"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Праскова</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaPeach"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Банан</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaBanana"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Мента</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaMint"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Шоколад</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaChocolate"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Крем карамел</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaCremeCaramel"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Таро</span>
+            <div class="menu-meta"><span class="menu-price">3.50лв</span> <button class="info-btn"
+                data-product-id="bubbleTeaTaro"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+        </div>
+      </div>
+      <!-- Категория 6 (обратен ред) -->
+      <div class="menu-category-section .reverse">
+        <div class="menu-list">
+          <h3 class="menu-category">Топли напитки</h3>
+          <div class="menu-item"><span class="menu-name">Топъл шоколад</span>
+            <div class="menu-meta"><span class="menu-price">3.00лв</span> <button class="info-btn"
+                data-product-id="hotChocolate"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+          <div class="menu-item"><span class="menu-name">Чай</span>
+            <div class="menu-meta"><span class="menu-price">3.00лв</span> <button class="info-btn"
+                data-product-id="tea"><img src="./assets/imgs/info-icon.png" alt="Information"
+                  class="info-icon" /></button></div>
+          </div>
+        </div>
+        <div class="menu-image" style="background-image: url('./assets/imgs/sweet-love-2.jpg');"></div>
+      </div>
+    </section>
+    <section class="plans-section" id="plans-section">
+
+      <!-- Секция заглавие -->
+      <div class="why_us">
+        <h2 class="section-title">Опитай топ предложенията <span class="highlight-three">на Bene Bene!</span></h2>
+      </div>
+
+      <div class="plans-section__cards">
 
 
-                <div class="plans-section__card plans-section__card--silver-plan">
+        <div class="plans-section__card plans-section__card--silver-plan">
 
-                    <!----------- Card title ------------>
-                    <h2 class="plans-section__card-title">Лате</h2>
+          <!----------- Card title ------------>
+          <h2 class="plans-section__card-title">Лате</h2>
 
-                    <!------- Plan features list -------->
-                    <ul class="plans-section__card-list plans-section__card-list--silver-plan">
-                        <li class="plans-section__card-list-item">Аромат на лешник <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Фина млечна пяна <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Поднесено със сърце <i class="fa fa-check"></i>
-                        </li>
-                    </ul>
+          <!------- Plan features list -------->
+          <ul class="plans-section__card-list plans-section__card-list--silver-plan">
+            <li class="plans-section__card-list-item">Аромат на лешник <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Фина млечна пяна <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Поднесено със сърце <i class="fa fa-check"></i>
+            </li>
+          </ul>
 
-                    <!----------- Card image ------------>
-                    <img src="./assets/imgs/latte.png" alt="silver plan image">
-                    <!----------------------------------->
-                </div>
+          <!----------- Card image ------------>
+          <img src="./assets/imgs/latte.png" alt="silver plan image">
+          <!----------------------------------->
+        </div>
 
-                <div class="plans-section__card plans-section__card--diamond-plan">
-                    <h2 class="plans-section__card-title">Домашен чийзкейк</h2>
-                    <!----------------------------------->
+        <div class="plans-section__card plans-section__card--diamond-plan">
+          <h2 class="plans-section__card-title">Домашен чийзкейк</h2>
+          <!----------------------------------->
 
-                    <!------- Plan features list -------->
-                    <ul class="plans-section__card-list plans-section__card-list--diamond-plan">
-                        <li class="plans-section__card-list-item">Сезонни плодове <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Нежна консистенция <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Истински крем сирене<i class="fa fa-check"></i></li>
-                    
-                    </ul>
+          <!------- Plan features list -------->
+          <ul class="plans-section__card-list plans-section__card-list--diamond-plan">
+            <li class="plans-section__card-list-item">Сезонни плодове <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Нежна консистенция <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Истински крем сирене<i class="fa fa-check"></i></li>
 
-                    <!----------- Card image ------------>
-                    <img src="./assets/imgs/cheesecake-pastane.bg_.jpg" alt="diamond plan image">
-                    <!----------------------------------->
-                </div>
+          </ul>
 
-                <div class="plans-section__card plans-section__card--gold-plan">
-                    <!----------- Card title ------------>
-                    <h2 class="plans-section__card-title">Лимонада с мента</h2>
-                    <!----------------------------------->
+          <!----------- Card image ------------>
+          <img src="./assets/imgs/cheesecake-pastane.bg_.jpg" alt="diamond plan image">
+          <!----------------------------------->
+        </div>
 
-                    <!------- Plan features list -------->
-                    <ul class="plans-section__card-list plans-section__card-list--gold-plan">
-                        <li class="plans-section__card-list-item">Свежа и охладена <i
-                                class="fa fa-check"></i></li>
-                        <li class="plans-section__card-list-item">Домашна рецепта <i class="fa fa-check"></i>
-                        </li>
-                        <li class="plans-section__card-list-item">С натурална мента <i
-                                class="fa fa-check"></i></li>
-                       
+        <div class="plans-section__card plans-section__card--gold-plan">
+          <!----------- Card title ------------>
+          <h2 class="plans-section__card-title">Лимонада с мента</h2>
+          <!----------------------------------->
 
-                    </ul>
-                    <!----------------------------------->
-
-                    <!----------- Card image ------------>
-                    <img src="./assets/imgs/lemon.jfif" alt="gold plan image">
-                    <!----------------------------------->
-                </div>
-            </div>
-        </section>
+          <!------- Plan features list -------->
+          <ul class="plans-section__card-list plans-section__card-list--gold-plan">
+            <li class="plans-section__card-list-item">Свежа и охладена <i class="fa fa-check"></i></li>
+            <li class="plans-section__card-list-item">Домашна рецепта <i class="fa fa-check"></i>
+            </li>
+            <li class="plans-section__card-list-item">С натурална мента <i class="fa fa-check"></i></li>
 
 
-        <!----------------------------------->
+          </ul>
+          <!----------------------------------->
 
-        <!---------- Plans section ---------->
+          <!----------- Card image ------------>
+          <img src="./assets/imgs/lemon.jfif" alt="gold plan image">
+          <!----------------------------------->
+        </div>
+      </div>
+    </section>
 
-   <div class="testimonial-wrapper">
-<figure class="snip1390">
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3" class="profile" />
-  <figcaption>
-    <h2>Елица Стоянова</h2>
-    <blockquote>Най-доброто лате, което съм пила! Уютна обстановка и винаги усмихнат персонал.</blockquote>
-  </figcaption>
-</figure>
-<figure class="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" />
-  <figcaption>
-    <h2>Иван Димитров</h2>
-    <blockquote>Чийзкейкът е божествен! Идеално място за срещи с приятели. </blockquote>
-  </figcaption>
-</figure>
-<figure class="snip1390"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample6" class="profile" />
-  <figcaption>
-    <h2>Мария Георгиева</h2>
-    <blockquote>Всяка напитка е направена с внимание. Вече съм редовен клиент!</blockquote>
-  </figcaption>
-</figure>
- 
-</div>
-        <!----------------------------------->
-    </main>
 
-    <!---- Scrolling control section ---->
-    <div id="#controls" class="controls">
-        <!-------- Scroll top button -------->
-        <button data-action="top" class="controls__scroll-btn action-button" title="Go to top"
-            aria-label="Go to the top of the page">
-            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-        </button>
-        <!----------------------------------->
-
-        <!------- Scroll bottom button ------>
-        <button data-action="bottom" class="controls__scroll-btn action-button active" title="Go to bottom"
-            aria-label="Go to the bottom of the page">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </button>
-        <!----------------------------------->
-    </div>
     <!----------------------------------->
 
-    <!------------- Footer -------------->
-    <footer>
-<div class="footer-two-column-wrapper  ">
-  
- <div class="contact-form-wrapper">
-  <form class="form-box" id="contact-form">
-    <div class="container-block form-wrapper">
-      <div class="responsive-container-block form-grid">
-        <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6">
-          <p class="text-blk input-title">Име</p>
-          <input class="input" name="name" placeholder="Име" required>
-        </div>
-        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-          <p class="text-blk input-title">Фамилия</p>
-          <input class="input" name="LastName" placeholder="Фамилия" required>
-        </div>
-        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-          <p class="text-blk input-title">Имейл</p>
-          <input class="input" name="Email" placeholder="Имейл" type="email" required>
-        </div>
-        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-          <p class="text-blk input-title">Телефон</p>
-          <input class="input" name="PhoneNumber" placeholder="Телефонен номер" type="tel">
-        </div>
-        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12">
-          <p class="text-blk input-title">Съобщение</p>
-          <textarea class="textarea" name="message" placeholder="Споделете какво мислите..." rows="5" required></textarea>
-        </div>
-      </div>
-      <div class="btn-wrapper">
-        <button class="submit-btn" type="submit">Изпрати</button>
-      </div>
+    <!---------- Plans section ---------->
+
+    <div class="testimonial-wrapper">
+      <figure class="snip1390">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3"
+          class="profile" />
+        <figcaption>
+          <h2>Елица Стоянова</h2>
+          <blockquote>Най-доброто лате, което съм пила! Уютна обстановка и винаги усмихнат персонал.</blockquote>
+        </figcaption>
+      </figure>
+      <figure class="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg"
+          alt="profile-sample5" class="profile" />
+        <figcaption>
+          <h2>Иван Димитров</h2>
+          <blockquote>Чийзкейкът е божествен! Идеално място за срещи с приятели. </blockquote>
+        </figcaption>
+      </figure>
+      <figure class="snip1390"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg"
+          alt="profile-sample6" class="profile" />
+        <figcaption>
+          <h2>Мария Георгиева</h2>
+          <blockquote>Всяка напитка е направена с внимание. Вече съм редовен клиент!</blockquote>
+        </figcaption>
+      </figure>
+
     </div>
-  </form>
-</div>
+    <!----------------------------------->
+  </main>
 
-  <!-- Дясна колона: Контактна информация -->
-  <div class="contact-section" id="ifgi">
-    <div class="container-box">
-      <div class="text-content">
-        <p class="contactus-head">Свържи се с нас</p>
-        <p class="contactus-subhead">
-          Свържете се с нас за всякакви въпроси или допълнителна информация.
-          Ние сме тук, за да направим вашето преживяване при нас още по-специално.
-        </p>
+  <!---- Scrolling control section ---->
+  <div id="#controls" class="controls">
+    <!-------- Scroll top button -------->
+    <button data-action="top" class="controls__scroll-btn action-button" title="Go to top"
+      aria-label="Go to the top of the page">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <!----------------------------------->
+
+    <!------- Scroll bottom button ------>
+    <button data-action="bottom" class="controls__scroll-btn action-button active" title="Go to bottom"
+      aria-label="Go to the bottom of the page">
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </button>
+    <!----------------------------------->
+  </div>
+  <!----------------------------------->
+
+  <!------------- Footer -------------->
+  <footer>
+    <div class="footer-two-column-wrapper  ">
+
+      <div class="contact-form-wrapper">
+        <form class="form-box" id="contact-form">
+          <div class="container-block form-wrapper">
+            <div class="responsive-container-block form-grid">
+              <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6">
+                <p class="text-blk input-title">Име</p>
+                <input class="input" name="name" placeholder="Име" required>
+              </div>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <p class="text-blk input-title">Фамилия</p>
+                <input class="input" name="LastName" placeholder="Фамилия" required>
+              </div>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <p class="text-blk input-title">Имейл</p>
+                <input class="input" name="Email" placeholder="Имейл" type="email" required>
+              </div>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <p class="text-blk input-title">Телефон</p>
+                <input class="input" name="PhoneNumber" placeholder="Телефонен номер" type="tel">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12">
+                <p class="text-blk input-title">Съобщение</p>
+                <textarea class="textarea" name="message" placeholder="Споделете какво мислите..." rows="5"
+                  required></textarea>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <button class="submit-btn" type="submit">Изпрати</button>
+            </div>
+          </div>
+        </form>
       </div>
-      
-      <div class="workik-contact-bigbox">
-        <div class="workik-contact-box">
-          <div class="text-box">
-            <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg">
-            <p class="contact-text">0893732733</p>
+
+      <!-- Дясна колона: Контактна информация -->
+      <div class="contact-section" id="ifgi">
+        <div class="container-box">
+          <div class="text-content">
+            <p class="contactus-head">Свържи се с нас</p>
+            <p class="contactus-subhead">
+              Свържете се с нас за всякакви въпроси или допълнителна информация.
+              Ние сме тук, за да направим вашето преживяване при нас още по-специално.
+            </p>
           </div>
-          <div class="text-box">
-            <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg">
-                  <p class="contact-text">tastycaterr@gmail.com</p>
-          </div>
-          <div class="text-box">
-            <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg">
-            <p class="contact-text">Център, Солун 3, 2600 Дупница</p>
+
+          <div class="workik-contact-bigbox">
+            <div class="workik-contact-box">
+              <div class="text-box">
+                <img class="contact-svg"
+                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg">
+                <p class="contact-text">0893732733</p>
+              </div>
+              <div class="text-box">
+                <img class="contact-svg"
+                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg">
+                <p class="contact-text">tastycaterr@gmail.com</p>
+              </div>
+              <div class="text-box">
+                <img class="contact-svg"
+                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg">
+                <p class="contact-text">Център, Солун 3, 2600 Дупница</p>
+              </div>
+            </div>
+
+            <div class="social-media-links">
+              <a href="https://www.google.com/maps/place/Bene+Bene+Nuts+%26+Coffee/@42.265491,23.1159656,17z/data=!3m1!4b1!4m6!3m5!1s0x14aae9f73a5ea5b1:0x386bd8c2d63622c4!8m2!3d42.2654871!4d23.1185405!16s%2Fg%2F11kc3k50z9?hl=bg&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <i class="fa fa-google fa-4x icon-3d"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61575771792550" target="_blank">
+                <i class="fa fa-facebook fa-4x icon-3d"></i>
+              </a>
+              <a href="https://www.instagram.com/bene_bene_dupnica?igsh=OTJjd21icmhxcnZ5&utm_source=qr" target="_blank">
+                <i class="fa fa-instagram fa-4x icon-3d"></i>
+              </a>
+            </div>
+
+
+            <div class="powered-by">© 2025 Bene Bene | All Rights Reserved <br>
+            </div>
           </div>
         </div>
+      </div>
 
-<div class="social-media-links">
-  <a href="https://www.google.com/maps/place/Bene+Bene+Nuts+%26+Coffee/@42.265491,23.1159656,17z/data=!3m1!4b1!4m6!3m5!1s0x14aae9f73a5ea5b1:0x386bd8c2d63622c4!8m2!3d42.2654871!4d23.1185405!16s%2Fg%2F11kc3k50z9?hl=bg&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
-    <i class="fa fa-google fa-4x icon-3d"></i>
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=61575771792550" target="_blank">
-    <i class="fa fa-facebook fa-4x icon-3d"></i>
-  </a>
-  <a href="https://www.instagram.com/bene_bene_dupnica?igsh=OTJjd21icmhxcnZ5&utm_source=qr" target="_blank">
-    <i class="fa fa-instagram fa-4x icon-3d"></i>
-  </a>
-</div>
+    </div>
 
-
-        <div class="powered-by">© 2025 Bene Bene | All Rights Reserved <br>
-        </div>
+  </footer>
+  <div id="modal" class="modal hide">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div class="price-circle">
+        <span id="modal-price"></span>
+        <small id="modal-volume" style="display: none;"></small>
+      </div>
+      <div id="modal-advice" class="modal-section" style="display: none;">
+        <h3>За най-добро изживяване</h3>
+        <p></p>
+      </div>
+      <div id="modal-reminder" class="modal-section" style="display: none;">
+        <h3>Важно</h3>
+        <p></p>
+      </div>
+      <div id="modal-alergens" class="modal-section-alergens" style="display: none;">
+        <h3>Алергени</h3>
+        <div class="allergen-container" id="modal-allergens-images"></div>
+        <a class="allergen-link" href="alergens.html">Всички алергени</a>
       </div>
     </div>
   </div>
 
-</div>
 
-</footer>
-    <div id="modal" class="modal hide">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">×</span>
-    <h2 id="modal-title"></h2>
-    <p id="modal-description"></p>
-    <div class="price-circle">
-      <span id="modal-price"></span>
-      <small id="modal-volume" style="display: none;"></small>
-    </div>
-    <div id="modal-advice" class="modal-section" style="display: none;">
-      <h3>За най-добро изживяване</h3>
-      <p></p>
-    </div>
-    <div id="modal-reminder" class="modal-section" style="display: none;">
-      <h3>Важно</h3>
-      <p></p>
-    </div>
-    <div id="modal-alergens" class="modal-section-alergens" style="display: none;">
-      <h3>Алергени</h3>
-      <div class="allergen-container" id="modal-allergens-images"></div>
-      <a class="allergen-link" href="alergens.html">Всички алергени</a>
-    </div>
-  </div>
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("m0V4oLpCBcKdJFby1"); // замени с твоя EmailJS Public Key
 
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  emailjs.init("m0V4oLpCBcKdJFby1"); // замени с твоя EmailJS Public Key
+      // Добавяме текущото време като скрито поле
+      let now = new Date().toLocaleString("bg-BG");
+      let timeInput = document.createElement("input");
+      timeInput.type = "hidden";
+      timeInput.name = "time";
+      timeInput.value = now;
+      this.appendChild(timeInput);
 
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    // Добавяме текущото време като скрито поле
-    let now = new Date().toLocaleString("bg-BG");
-    let timeInput = document.createElement("input");
-    timeInput.type = "hidden";
-    timeInput.name = "time";
-    timeInput.value = now;
-    this.appendChild(timeInput);
-
-    // Изпращане чрез EmailJS
-    emailjs.sendForm("service_vjrxm34", "template_iybaijk", this)
-      .then(() => {
-        alert("Съобщението беше изпратено успешно!");
-        this.reset();
-      })
-      .catch((err) => {
-        console.error("Грешка при изпращане:", err);
-        alert("Възникна грешка. Опитайте отново.");
-      });
-  });
-</script>
+      // Изпращане чрез EmailJS
+      emailjs.sendForm("service_vjrxm34", "template_iybaijk", this)
+        .then(() => {
+          alert("Съобщението беше изпратено успешно!");
+          this.reset();
+        })
+        .catch((err) => {
+          console.error("Грешка при изпращане:", err);
+          alert("Възникна грешка. Опитайте отново.");
+        });
+    });
+  </script>
 </body>
+
 </html>
